@@ -1,16 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blanchard</title>
-    <base target="_blank">
-    <link rel="icon" href="img/favicon.png" type="img/png" sizes="25x25">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blanchard - художественная галерея</title>
+  <base target="_blank">
+  <link rel="icon" href="img/favicon.png" type="img/png" sizes="25x25">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Blanchard-художественная галерея</h1>
-    <h2>Прикоснитесь к&nbsp;прекрасному</h2>
+  <div class="site-container">
+    <header class="header">
+      <div class="container header__container">
+        <button class="btn-reset burger header__burger">
+          <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="25" height="2" transform="matrix(-1 0 0 1 25 0)" fill="white" />
+            <path d="M16 8H5.06639e-07V10H16V8Z" fill="white" />
+            <path d="M10 16H0V18H10V16Z" fill="white" />
+          </svg>
+        </button>
+        <a class="logo header__logo">
+          <img src="img/logo.svg" alt="Логотип художественной галереи">
+        </a>
+        <nav class="nav header__nav">
+          <ul class="list-reset nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">О&nbsp;нас</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Галерея</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">События</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Проекты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="btn-reset search">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M24.5006 12C24.5006 16.9706 20.4712 21 15.5006 21C10.5301 21 6.50063 16.9706 6.50063 12C6.50063 7.02944 10.5301 3 15.5006 3C20.4712 3 24.5006 7.02944 24.5006 12ZM27.5006 12C27.5006 18.6274 22.128 24 15.5006 24C12.7287 24 10.1762 23.0601 8.14456 21.4816L2.62132 27.0049L0.5 24.8836L6.02271 19.3609C4.44199 17.3284 3.50063 14.7742 3.50063 12C3.50063 5.37258 8.87322 0 15.5006 0C22.128 0 27.5006 5.37258 27.5006 12Z"
+              fill="white" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="visually-hidden">Blanchard-художественная галерея</h1>
+            <h2 class="site-title hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
+            <p class="site-descr hero__descr">
+              Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
+              предпосылки для новых предложений.
+            </p>
+            <button class="btn btn-reset hero__btn" type="button">Подписаться на&nbsp;рассылку</button>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h3 class="site-title about__title">
+            О&nbsp;нас
+          </h3>
+          <p class="site-descr about__descr">
+            Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
+            участника как способного принимать собственные решения касаемо распределения внутренних резервов
+            и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет
+            за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
+            высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план
+            целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов
+            и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции
+            набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <h3 class="site-title gallery__title">
+            Галерея
+          </h3>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>
