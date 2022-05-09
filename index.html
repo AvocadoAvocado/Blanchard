@@ -82,9 +82,37 @@
           <h3 class="site-title gallery__title">
             Галерея
           </h3>
-          <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-
+          <form class="form gallery__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <fieldset>
+              <legend class="gallery__filter-legend">Фильтр:</legend>
+              <label class="visually-hidden" for="fine-art">Вид изобразительного искусства</label>
+              <select class="gallery__filter-select">
+                <option value="painting">Живопись</option>
+                <option value="picture">Рисунок</option>
+                <option value="sculpture">Скульптура</option>
+              </select>
+              <div class="gallery__filter-checkbox">
+                <label class="gallery__checkbox" for="19century">
+                  <input type="checkbox" name="19century" id="19century">
+                  <span class="gallery__filter-period">XIX век</span>
+                </label>
+                <label class="gallery__checkbox" for="20century">
+                  <input type="checkbox" name="20century" id="20century" checked>
+                  <span class="gallery__filter-period">XX век</span>
+                </label>
+                <label class="gallery__checkbox" for="modernity">
+                  <input type="checkbox" name="modernity" id="modernity">
+                  <span class="gallery__filter-period">Современность</span>
+                </label>
+              </div>
+            </fieldset>
           </form>
+          <div class="gallery__slide">
+            <picture>
+              <source srcset="img/gallery-Kazimir-Malevich-1-2x.jpg">
+              <img class="slide__image" src="img/gallery-Kazimir-Malevich-1.jpg" alt="изображение-1">
+            </picture>
+          </div>
         </div>
       </section>
     </main>

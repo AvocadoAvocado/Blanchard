@@ -132,3 +132,21 @@ body {
 .gallery__title {
   color: #fff;
 }
+
+.gallery__filter-legend {
+  color: #fff;
+}
+
+.gallery__filter-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__filter-period {
+  color: #fff;
+}
+
+.slide__image {
+  height: 100%;
+  object-fit: cover;
+}
