@@ -154,3 +154,22 @@ body {
 .gallery__slide-numer {
   color: #fff;
 }
+
+/* contacts */
+.messengers__link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.messengers__link--whatsapp {
+  background-image: url(../img/Whatsapp-Icon.svg);
+}
+
+.messengers__link--telegram {
+  background-image: url(../img/Telegram-icon.svg);
+}
