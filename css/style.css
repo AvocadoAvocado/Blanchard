@@ -1,5 +1,14 @@
 @font-face {
 	font-family: 'OpenSans';
+	src: local('OpenSans Italic'), local('OpenSansItalic'),
+    url('../fonts/OpenSansItalic.woff2') format('woff2'),
+		url('../fonts/OpenSansItalic.woff') format('woff');
+	font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'OpenSans';
 	src: local('OpenSans Regular'), local('OpenSansRegular'),
     url('../fonts/OpenSansRegular.woff2') format('woff2'),
 		url('../fonts/OpenSansRegular.woff') format('woff');
@@ -34,16 +43,6 @@
     url('../fonts/OpenSansSemibold.woff2') format('woff2'),
 		url('../fonts/OpenSansSemibold.woff') format('woff');
 	font-weight: 600;
-	font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-	font-family: 'OpenSans';
-	src: local('OpenSans Italic'), local('OpenSansItalic'),
-    url('../fonts/OpenSansItalic.woff2') format('woff2'),
-		url('../fonts/OpenSansItalic.woff') format('woff');
-	font-weight: 400;
 	font-style: normal;
   font-display: swap;
 }
@@ -119,6 +118,12 @@ body {
   margin-top: 0;
 }
 
+.site-caption {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+}
+
 .site-descr {
   margin-top: 0;
 }
@@ -155,9 +160,36 @@ body {
 }
 
 .hero__content {
- padding-top: 30px;
- padding-bottom: 45px;
- color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  color: #fff;
+}
+
+.hero__title {
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.hero__descr {
+  max-width: 265px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.hero__btn {
+  padding: 11px 16px 14px;
+  border-radius: 100px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #9d5cd0;
 }
 
 /* about */
@@ -166,8 +198,15 @@ body {
   padding-bottom: 50px;
 }
 
+.about__title {
+
+}
+
 .about__descr {
   margin-bottom: 0;
+  font-size: 14px;
+  line-height: 28px;
+  color: #333;
 }
 
 /* gallery */
@@ -179,20 +218,54 @@ body {
   background-color: #000;
 }
 
+.gallery__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .gallery__title {
+  margin-bottom: 12px;
   color: #fff;
 }
 
-.gallery__filter-legend {
+.form__filter-part {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__filter-legend {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
   color: #fff;
 }
 
-.gallery__filter-checkbox {
+.form__filter-checkbox {
+  position: relative;
   display: flex;
-  flex-direction: column;
 }
 
-.gallery__filter-period {
+.form__filter-checkbox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+}
+
+.form__filter-checkbox::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.form__filter-period {
   color: #fff;
 }
 
