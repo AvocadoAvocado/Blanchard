@@ -155,6 +155,10 @@ body {
   color: #fff;
 }
 
+/* catalog */
+
+/* events */
+
 /* contacts */
 .messengers__link {
   display: inline-block;
@@ -172,4 +176,9 @@ body {
 
 .messengers__link--telegram {
   background-image: url(../img/Telegram-icon.svg);
+}
+
+/* footer */
+.footer {
+  background-color: #000;
 }
