@@ -160,6 +160,14 @@ body {
 /* events */
 
 /* contacts */
+.contacts__container {
+  padding: 0;
+}
+
+.contacts__container-padding {
+  padding: 0 15px;
+}
+
 .messengers__link {
   display: inline-block;
   width: 40px;
@@ -176,6 +184,14 @@ body {
 
 .messengers__link--telegram {
   background-image: url(../img/Telegram-icon.svg);
+}
+
+.contacts__map {
+
+}
+
+[class*=ground-pane] {
+  filter: grayscale(1);
 }
 
 /* footer */

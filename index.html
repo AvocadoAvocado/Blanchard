@@ -367,37 +367,73 @@
 
       <section class="contacts">
         <div class="container contacts__container">
-          <address class="contacts__address">
-            <strong class="contacts__caption">
-              Шоурум &#8470;&nbsp;4
-            </strong>
-            <span class="contacts__location">
-              Леонтьевский переулок, дом 5/1
-            </span>
-          </address>
-          <form class="form contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <label class="visually-hidden" for="name">Имя</label>
-            <input class="form__input" type="text" id="name" name="name" placeholder="Имя*" required>
-            <label class="visually-hidden" for="tel">Телефон</label>
-            <input class="form__input" type="tel" id="tel" name="tel" placeholder="Телефон*" required>
-            <button class="btn-reset btn contacts__btn" type="submit">Заказать</button>
-          </form>
-          <div class="contacts__messengers">
-            <p class="site-descr messengers__text">
-              Связаться в&nbsp;один клик
-            </p>
-            <ul class="list-reset messengers__list">
-              <li class="messengers__item">
-                <a class="messengers__link messengers__link--whatsapp" href="#">
-                </a>
-              </li>
-              <li class="messengers__item">
-                <a class="messengers__link messengers__link--telegram" href="#"></a>
-              </li>
-            </ul>
+          <div class="contacts__container-padding">
+            <address class="contacts__address">
+              <strong class="contacts__caption">
+                Шоурум &#8470;&nbsp;4
+              </strong>
+              <span class="contacts__location">
+                Леонтьевский переулок, дом 5/1
+              </span>
+            </address>
+            <form class="form contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Имя*" required>
+              <label class="visually-hidden" for="tel">Телефон</label>
+              <input class="form__input" type="tel" id="tel" name="tel" placeholder="Телефон*" required>
+              <button class="btn-reset btn contacts__btn" type="submit">Заказать</button>
+            </form>
+            <div class="contacts__messengers">
+              <p class="site-descr messengers__text">
+                Связаться в&nbsp;один клик
+              </p>
+              <ul class="list-reset messengers__list">
+                <li class="messengers__item">
+                  <a class="messengers__link messengers__link--whatsapp" href="#">
+                  </a>
+                </li>
+                <li class="messengers__item">
+                  <a class="messengers__link messengers__link--telegram" href="#"></a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="contacts__map">
+            <div id="map" style="width: 320px; height: 320px">
+              <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+              </script>
+              <script type="text/javascript">
+                // Функция ymaps.ready() будет вызвана, когда
+                // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+                ymaps.ready(init);
+                function init() {
+                  // Создание карты.
+                  var myMap = new ymaps.Map("map", {
+                    // Координаты центра карты.
+                    // Порядок по умолчанию: «широта, долгота».
+                    // Чтобы не определять координаты центра карты вручную,
+                    // воспользуйтесь инструментом Определение координат.
+                    center: [55.76033441718593, 37.61357447360226],
+                    // Уровень масштабирования. Допустимые значения:
+                    // от 0 (весь мир) до 19.
+                    zoom: 14,
+                    controls: []
+                  });
 
+                  // Создание геообъекта с типом точка (метка).
+                  var myPlacemark = new ymaps.Placemark([55.76033441718593, 37.61357447360226], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'img/location.svg',
+                    iconImageSize: [20, 20],
+                    iconImageOffset: [-3, -42]
+                  });
+
+                  // Размещение геообъекта на карте.
+                  myMap.geoObjects.add(myPlacemark);
+                  myMap.container.fitToViewport();
+                }
+              </script>
+            </div>
           </div>
         </div>
       </section>
