@@ -93,15 +93,15 @@
               </select>
               <div class="form__filter-gallery">
                 <label class="form__filter-checkbox" for="19century">
-                  <input class="form__filter-feature" type="checkbox" name="19century" id="19century">
+                  <input class="form__filter-feature" id="19century" type="checkbox" name="19century">
                   <span class="form__filter-period">XIX век</span>
                 </label>
                 <label class="form__filter-checkbox" for="20century">
-                  <input class="form__filter-feature" type="checkbox" name="20century" id="20century" checked>
+                  <input class="form__filter-feature" id="20century" type="checkbox" name="20century" checked>
                   <span class="form__filter-period">XX век</span>
                 </label>
                 <label class="form__filter-checkbox" for="modernity">
-                  <input class="form__filter-feature" type="checkbox" name="modernity" id="modernity">
+                  <input class="form__filter-feature" id="modernity" type="checkbox" name="modernity" >
                   <span class="form__filter-period">Современность</span>
                 </label>
               </div>
@@ -378,9 +378,9 @@
             </address>
             <form class="form contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
               <label class="visually-hidden" for="name">Имя</label>
-              <input class="form__input" type="text" id="name" name="name" placeholder="Имя*" required>
+              <input class="form__input" id="name" type="text" name="name" placeholder="Имя*" required>
               <label class="visually-hidden" for="tel">Телефон</label>
-              <input class="form__input" type="tel" id="tel" name="tel" placeholder="Телефон*" required>
+              <input class="form__input" id="tel" type="tel" name="tel" placeholder="Телефон*" required>
               <button class="btn-reset btn contacts__btn" type="submit">Заказать</button>
             </form>
             <div class="contacts__messengers">

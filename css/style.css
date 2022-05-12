@@ -241,32 +241,52 @@ body {
   color: #fff;
 }
 
-.form__filter-checkbox {
+.form__filter-checkbox span {
   position: relative;
   display: flex;
+  align-items: center;
+  line-height: 32px;
+  color: #fff;
 }
 
-.form__filter-checkbox::before {
+.form__filter-checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.form__filter-checkbox span::before {
   content: "";
-  display: block;
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
+  display: block;
+  border: 1px solid #fff;
   width: 12px;
   height: 12px;
-  border: 1px solid #fff;
 }
 
-.form__filter-checkbox::after {
+.form__filter-checkbox span::after {
   content: "";
-  display: block;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
+  display: none;
+  margin-top: -2px;
+  width: 4px;
+  height: 4px;
+  background-image: url(../img/point.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
 }
 
-.form__filter-period {
-  color: #fff;
+.form__filter-checkbox input:checked + span::after {
+  display: block;
+}
+
+.form__filter-checkbox input:focus + span::before {
+  border-color:  #c283f3;
 }
 
 .slide__image {
