@@ -8,6 +8,7 @@
   <base target="_blank">
   <link rel="icon" href="img/favicon.png" type="img/png" sizes="25x25">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -86,11 +87,20 @@
             <fieldset class="form__filter-part">
               <legend class="form__filter-legend">Фильтр:</legend>
               <label class="visually-hidden">Вид изобразительного искусства</label>
-              <select class="form__filter-select">
+              <select class="form__filter-select" name="select">
                 <option value="painting">Живопись</option>
                 <option value="picture">Рисунок</option>
                 <option value="sculpture">Скульптура</option>
               </select>
+              <script src="js/choices.min.js"></script>
+              <script>
+
+                const element = document.querySelector('select');
+                const choices = new Choices(element, {
+                  searchEnabled: false
+                });
+              </script>
+
               <div class="form__filter-gallery">
                 <label class="form__filter-checkbox" for="19century">
                   <input class="form__filter-feature" id="19century" type="checkbox" name="19century">
@@ -101,7 +111,7 @@
                   <span class="form__filter-period">XX век</span>
                 </label>
                 <label class="form__filter-checkbox" for="modernity">
-                  <input class="form__filter-feature" id="modernity" type="checkbox" name="modernity" >
+                  <input class="form__filter-feature" id="modernity" type="checkbox" name="modernity">
                   <span class="form__filter-period">Современность</span>
                 </label>
               </div>

@@ -241,6 +241,83 @@ body {
   color: #fff;
 }
 
+/* select */
+.choices__inner {
+  border-radius: 6px
+}
+
+.choices__item {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.choices__inner {
+  min-width: 176px;
+  min-height: 40px;
+  box-shadow: 0 0 1px rgb(0 0 0 / 80%);
+  background: rgba(0, 0, 0, 0);
+  z-index: 10;
+}
+
+.is-open .choices__inner {
+  border: 1px solid #fff!important;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.choices[data-type*=select-one]::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.656853L6.65686 6.31371L12.3137 0.656851' stroke='%23666666'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  margin-top: 0;
+  padding-right: 18px;
+  width: 13px;
+  height: 8px;
+  border-style: none;
+  z-index: 10;
+}
+
+.choices[data-type*=select-one].is-open::after {
+  margin-top: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='8' viewBox='0 0 13 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.3137 6.65674L6.65687 0.999884L1.00001 6.65674' stroke='%23CCB26E'/%3E%3C/svg%3E ");
+}
+
+.choices {
+  display: flex;
+  min-width: 176px;
+}
+
+.choices__list--dropdown {
+  border-bottom: 10px
+}
+
+.choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+.is-open .choices__inner {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #fff!important;
+}
+
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  margin-top: -9px;
+  z-index: 0;
+}
+
+.choices__list--dropdown {
+  padding-top: 10px;
+}
+
 /* checkbox */
 .form__filter-checkbox input[type="checkbox"] {
   position: absolute;
@@ -253,6 +330,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
   color: #fff;
 }
 
