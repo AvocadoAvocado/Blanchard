@@ -157,6 +157,10 @@ body {
 }
 
 /* hero */
+.swiper__hero {
+  height: 355px;
+}
+
 .hero__container {
   background-image: url(../img/bg-hero-slider1.jpg);
   background-position: center;
@@ -433,8 +437,9 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  height: 44px;
   align-items: center;
+  height: 44px;
+  margin-top: 20px;
 }
 
 /* .slide__image {
