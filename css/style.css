@@ -385,10 +385,35 @@ body {
   opacity: 1;
 }
 
-.slide__image {
-  height: 100%;
+/* slides */
+.swiper-slide__image{
+  height: 367px;
   object-fit: cover;
 }
+
+.swiper {
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  font-size: 20px;
+  padding: 18px;
+  color: #fff;
+  background-color: #666;
+}
+
+/* .slide__image {
+  height: 100%;
+  object-fit: cover;
+} */
 
 .gallery__slide-numer {
   color: #fff;

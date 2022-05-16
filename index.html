@@ -9,8 +9,9 @@
   <link rel="icon" href="img/favicon.png" type="img/png" sizes="25x25">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/choices.min.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -118,12 +119,44 @@
               </div>
             </fieldset>
           </form>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-1.jpg" alt="композиция-1">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-2.jpg" alt="композиция-2">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-3.jpg" alt="композиция-3">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-4.jpg" alt="композиция-4">
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-5.jpg" alt="композиция-5">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper__btn">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <!--
           <div class="gallery__slide">
             <picture>
               <source srcset="img/gallery-Kazimir-Malevich-1-2x.jpg">
               <img class="slide__image" src="img/gallery-Kazimir-Malevich-1.jpg" alt="изображение-1">
             </picture>
           </div>
+          -->
           <span class="gallery__slide-numer">1/6</span>
         </div>
       </section>
@@ -490,6 +523,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
