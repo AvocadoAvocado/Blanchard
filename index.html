@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/choices.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
@@ -50,27 +51,7 @@
 
     <main>
       <section class="hero">
-        <!-- Slider main container -->
-        <div class="swiper swiper__hero">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide" style="background-image: url('img/bg-hero-slider-1.jpg');">Slide 1</div>
-            <div class="swiper-slide" style="background-image: url('img/bg-hero-slider-2.jpg');">Slide 2</div>
-            <div class="swiper-slide" style="background-image: url('img/bg-hero-slider-3.jpg');">Slide 3</div>
-            ...
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
-        </div>
-        <div class="container hero__container">
+        <div class="hero__container">
           <div class="hero__content">
             <h1 class="visually-hidden">Blanchard-художественная галерея</h1>
             <h2 class="site-title hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
@@ -81,6 +62,26 @@
             <button class="btn btn-reset hero__btn" type="button">Подписаться на&nbsp;рассылку</button>
           </div>
         </div>
+        <!-- Slider main container -->
+        <div class="swiper hero__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper hero__swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-1.jpg');"></div>
+            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-2.jpg');"></div>
+            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-3.jpg');"></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination hero__swiper-pagination"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar hero__swiper-scrollbar"></div>
+        </div>
+          <!-- If we need navigation buttons -->
+          <div class="hero__btn-swiper">
+            <div class="swiper-button-prev hero__swiper-btn hero__swiper-button-prev"></div>
+            <div class="swiper-button-next hero__swiper-btn hero__swiper-button-next"></div>
+          </div>
       </section>
       <section class="about">
         <div class="container">
@@ -114,9 +115,7 @@
                 <option value="picture">Рисунок</option>
                 <option value="sculpture">Скульптура</option>
               </select>
-              <script src="js/choices.min.js"></script>
               <script>
-
                 const element = document.querySelector('select');
                 const choices = new Choices(element, {
                   searchEnabled: false
@@ -140,7 +139,7 @@
             </fieldset>
           </form>
           <!-- Slider main container -->
-          <div class="swiper">
+          <div class="swiper gallery__swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -161,10 +160,10 @@
               </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper__box">
-              <div class="swiper-button-prev"></div>
+            <div class="gallery__swiper-box">
+              <div class="gallery__swiper-btn gallery__button-prev swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
+              <div class="gallery__swiper-btn gallery__button-next swiper-button-next"></div>
             </div>
           </div>
           <!--

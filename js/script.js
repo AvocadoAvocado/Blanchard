@@ -1,4 +1,6 @@
-let swiper = new Swiper('.swiper', {
+const slider = document.querySelector('.swiper-container');
+
+let swiper = new Swiper('.gallery__swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   loop: true,
@@ -12,3 +14,11 @@ let swiper = new Swiper('.swiper', {
   }
 })
 
+let mySwiper = new Swiper('.hero__swiper', {
+  slidesPerView: 1,
+  autoplay: {
+    delay: 2000,
+  },
+  effect: 'fade',
+  loop: true,
+});
