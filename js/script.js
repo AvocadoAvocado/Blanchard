@@ -1,3 +1,4 @@
+// swiper
 const slider = document.querySelector('.swiper-container');
 
 let swiper = new Swiper('.gallery__swiper', {
@@ -22,3 +23,45 @@ let mySwiper = new Swiper('.hero__swiper', {
   effect: 'fade',
   loop: true,
 });
+
+// burger
+let burger = document.querySelector('.burger');
+let menu = document.querySelector('.header__nav');
+let menuLinks = menu.querySelectorAll('.nav__link');
+let close = document.querySelector('.nav__close');
+
+burger.addEventListener('click',
+
+  function () {
+
+    burger.classList.toggle('header__burger--active');
+
+    menu.classList.toggle('header__nav--active');
+
+    document.body.classList.toggle('stop-scroll');
+  })
+
+menuLinks.forEach(function(el) {
+  el.addEventListener('click', function () {
+
+    burger.classList.remove('header__burger--active');
+
+    menu.classList.remove('header__nav--active');
+
+    document.body.classList.remove('stop-scroll')
+  })
+})
+
+close.addEventListener('click',
+  function () {
+
+    burger.classList.toggle('header__burger--active');
+
+    menu.classList.toggle('header__nav--active');
+
+    document.body.classList.toggle('stop-scroll');
+  })
+
+// tabs
+
+// search

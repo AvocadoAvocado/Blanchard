@@ -30,6 +30,7 @@
           <img src="img/logo.svg" alt="Логотип художественной галереи">
         </a>
         <nav class="nav header__nav">
+          <button class="nav__close btn-reset" aria-label="Закрыть" type="button"></button>
           <ul class="list-reset nav__list">
             <li class="nav__item"><a class="nav__link" href="#">О&nbsp;нас</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Галерея</a></li>
@@ -67,9 +68,12 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper hero__swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-1.jpg');"></div>
-            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-2.jpg');"></div>
-            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-3.jpg');"></div>
+            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-1.jpg');">
+            </div>
+            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-2.jpg');">
+            </div>
+            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-3.jpg');">
+            </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination hero__swiper-pagination"></div>
@@ -77,11 +81,11 @@
           <!-- If we need scrollbar -->
           <div class="swiper-scrollbar hero__swiper-scrollbar"></div>
         </div>
-          <!-- If we need navigation buttons -->
-          <div class="hero__btn-swiper">
-            <div class="swiper-button-prev hero__swiper-btn hero__swiper-button-prev"></div>
-            <div class="swiper-button-next hero__swiper-btn hero__swiper-button-next"></div>
-          </div>
+        <!-- If we need navigation buttons -->
+        <div class="hero__btn-swiper">
+          <div class="swiper-button-prev hero__swiper-btn hero__swiper-button-prev"></div>
+          <div class="swiper-button-next hero__swiper-btn hero__swiper-button-next"></div>
+        </div>
       </section>
       <section class="about">
         <div class="container">
@@ -144,19 +148,34 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-1.jpg" alt="композиция-1">
+                <picture>
+                  <source srcset="img/gallery-Kazimir-Malevich-1-2x.jpg">
+                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-1.jpg" alt="композиция-1">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-2.jpg" alt="композиция-2">
+                <picture>
+                  <source srcset="img/gallery-Kazimir-Malevich-2-2x.jpg">
+                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-2.jpg" alt="композиция-2">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-3.jpg" alt="композиция-3">
+                 <picture>
+                  <source srcset="img/gallery-Kazimir-Malevich-3-2x.jpg">
+                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-3.jpg" alt="композиция-3">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-4.jpg" alt="композиция-4">
+                 <picture>
+                  <source srcset="img/gallery-Kazimir-Malevich-4-2x.jpg">
+                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-4.jpg" alt="композиция-4">
+                </picture>
               </div>
               <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-5.jpg" alt="композиция-5">
+                 <picture>
+                  <source srcset="img/gallery-Kazimir-Malevich-5-2x.jpg">
+                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-5.jpg" alt="композиция-5">
+                </picture>
               </div>
             </div>
             <!-- If we need pagination -->
