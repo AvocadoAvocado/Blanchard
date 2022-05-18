@@ -41,7 +41,7 @@ burger.addEventListener('click',
     document.body.classList.toggle('stop-scroll');
   })
 
-menuLinks.forEach(function(el) {
+menuLinks.forEach(function (el) {
   el.addEventListener('click', function () {
 
     burger.classList.remove('header__burger--active');
@@ -62,6 +62,16 @@ close.addEventListener('click',
     document.body.classList.toggle('stop-scroll');
   })
 
+// accordion
+new Accordion('.accordion-list1', {
+  elementClass: 'accordion',
+  triggerClass: 'accordion__control',
+  panelClass: 'accordion__content',
+  activeClass: 'accordion--active'
+});
+
 // tabs
+
+
 
 // search
