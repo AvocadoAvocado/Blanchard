@@ -567,7 +567,7 @@ body {
 .catalog__item {
   position: relative;
   margin-top: -1px;
-  padding: 25px 0;
+  padding: 20px 0;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #cacaca;
   transition: border-color .5s;
@@ -596,6 +596,22 @@ body {
 
 .catalog__item:hover svg path {
   fill: #d1a9f0;
+}
+
+.accordion__name-box--icon {
+  padding-top: 20px;
+}
+
+.accordion__name-box {
+  margin-top: 20px;
+  border-top: 1px solid #9d5cd0;
+}
+
+.ac-text {
+  max-width: 80%;
+  margin: 20px 0;
+  margin-bottom: 0;
+  line-height: 32px;
 }
 
 .ac-link {
