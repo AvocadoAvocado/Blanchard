@@ -538,6 +538,10 @@ body {
   padding-bottom: 50px;
 }
 
+.accordion-list {
+  margin-bottom: 50px;
+}
+
 .accordion__content {
   overflow: hidden;
   transition-property: height, visibility;
@@ -602,6 +606,24 @@ body {
   padding-top: 20px;
 }
 
+.accordion__container-flex {
+  display: flex;
+}
+
+.ac-descr {
+  display: inline-block;
+  line-height: 22px;
+}
+
+.accordion__content-box {
+  margin-left: 25px;
+}
+
+
+.ac-caption {
+  margin-bottom: 5px;
+}
+
 .accordion__name-box {
   margin-top: 20px;
   border-top: 1px solid #9d5cd0;
@@ -625,15 +647,52 @@ body {
   display: flex;
 }
 
-.accordion__content-box {
-  margin-left: 10px;
-}
-
 /* .catalog__item--open svg {
   transform: rotate(180deg);
 }  */
 
+.card-artist__conteiner-content {
+  margin-top: 20px;
+}
+
+.card-artist__name {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.card-artist__lifespan {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+}
+
+.card-artist__career {
+  margin-bottom: 0;
+  line-height: 32px;
+}
 /* events */
+.events__title {
+  padding-bottom: 12px;
+}
+
+.card-preview__container-content {
+  margin-top: 17px;
+}
+
+.card-preview__location {
+  display: flex;
+  max-width: 141px;
+  margin-left: auto;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+}
 
 /* contacts */
 .contacts__container {
