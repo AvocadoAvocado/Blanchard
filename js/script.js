@@ -24,7 +24,7 @@ let mySwiper = new Swiper('.hero__swiper', {
   loop: true,
 });
 
-let bottomSwiper = new Swiper('.card-preview__swiper', {
+let mySlider = new Swiper('.card-preview__swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   loop: true,
@@ -40,6 +40,15 @@ let bottomSwiper = new Swiper('.card-preview__swiper', {
 
   autoHeight: true,
 })
+
+var buttonSwiper = new Swiper(".projects__swiper", {
+  effect: 'fade',
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // burger
 let burger = document.querySelector('.burger');
