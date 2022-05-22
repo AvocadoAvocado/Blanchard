@@ -24,6 +24,23 @@ let mySwiper = new Swiper('.hero__swiper', {
   loop: true,
 });
 
+let bottomSwiper = new Swiper('.card-preview__swiper', {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  loop: true,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+      el: '.card-preview__pagination',
+      type: 'bullets',
+      clicable: true,
+  },
+
+  autoHeight: true,
+})
+
 // burger
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.header__nav');
