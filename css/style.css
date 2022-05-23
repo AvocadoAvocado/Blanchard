@@ -873,10 +873,27 @@ body {
   margin-bottom: 20px;
 }
 
+.contacts__messengers {
+  margin-bottom: 20px;
+}
+
 .messengers__text {
   margin-bottom: 11px;
   font-size: 18px;
   line-height: 32px;
+}
+
+.messengers__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.messengers__item {
+  padding-right: 21px;
+}
+
+.messengers__item:last-child {
+  padding-right: 0;
 }
 
 .messengers__link {
@@ -908,4 +925,25 @@ body {
 /* footer */
 .footer {
   background-color: #000;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.social__item {
+  padding-right: 30px;
+}
+
+.social__item:last-child {
+  padding-right: 0;
 }
