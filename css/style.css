@@ -914,8 +914,12 @@ body {
   background-image: url(../img/Telegram-icon.svg);
 }
 
-.contacts__map {
+.map {
+  background-color: #ececec;
+}
 
+[class*="copyrights-pane"] {
+  display: none !important;
 }
 
 [class*=ground-pane] {
