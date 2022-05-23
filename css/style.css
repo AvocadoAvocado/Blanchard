@@ -804,9 +804,17 @@ body {
   font-size: 10px;
 }
 
+.projects__swiper-button-prev, .swiper-rtl .projects__swiper-button-next {
+  left: 0;
+}
+
+.projects__swiper-button-next, .swiper-rtl .projects__swiper-button-prev {
+  right: 0;
+}
+
 .projects__swiper-wrapper {
   width: 195px;
-  margin: 0 10px;
+  margin: 0 18px;
 }
 
 .projects__swiper-slide {
@@ -822,6 +830,53 @@ body {
 
 .contacts__container-padding {
   padding: 0 15px;
+}
+
+.contacts__caption {
+  display:block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  font-style: normal;
+}
+
+.contacts__location {
+  font-style: normal;
+}
+
+.contacts__address {
+  margin-bottom: 20px;
+}
+
+.form__contaiher-flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+.contacts__btn {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 31px;
+  border-radius: 100px;
+  border: 2px solid #9d5cd0;
+  color: #9d5cd0;
+}
+
+.contacts__form {
+  margin-bottom: 20px;
+}
+
+.messengers__text {
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .messengers__link {

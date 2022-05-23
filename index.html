@@ -590,10 +590,12 @@
               </span>
             </address>
             <form class="form contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input class="form__input" id="name" type="text" name="name" placeholder="Имя*" required>
-              <label class="visually-hidden" for="tel">Телефон</label>
-              <input class="form__input" id="tel" type="tel" name="tel" placeholder="Телефон*" required>
+              <div class="form__contaiher-flex">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input class="form__input" id="name" type="text" name="name" placeholder="Имя*" required>
+                <label class="visually-hidden" for="tel">Телефон</label>
+                <input class="form__input" id="tel" type="tel" name="tel" placeholder="Телефон*" required>
+              </div>
               <button class="btn-reset btn contacts__btn" type="submit">Заказать</button>
             </form>
             <div class="contacts__messengers">
