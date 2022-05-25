@@ -98,25 +98,13 @@ new Accordion('.accordion-list', {
 
 // map
 function init() {
-  let map = new ymaps.Map('map')
-}
-
-
-function init() {
-  // Создание карты.
   var myMap = new ymaps.Map("map", {
-    // Координаты центра карты.
-    // Порядок по умолчанию: «широта, долгота».
-    // Чтобы не определять координаты центра карты вручную,
-    // воспользуйтесь инструментом Определение координат.
+
     center: [55.76033441718593, 37.61357447360226],
-    // Уровень масштабирования. Допустимые значения:
-    // от 0 (весь мир) до 19.
     zoom: 14,
     controls: []
   });
 
-  // Создание геообъекта с типом точка (метка).
   var myPlacemark = new ymaps.Placemark([55.76033441718593, 37.61357447360226], {}, {
     iconLayout: 'default#image',
     iconImageHref: 'img/location.svg',
@@ -124,7 +112,6 @@ function init() {
     iconImageOffset: [-3, -42]
   });
 
-  // Размещение геообъекта на карте.
   myMap.geoObjects.add(myPlacemark);
   myMap.container.fitToViewport();
 }
