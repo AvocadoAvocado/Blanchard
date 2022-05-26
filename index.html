@@ -82,19 +82,43 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper hero__swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-1.jpg');">
-            </div>
-            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-2.jpg');">
-            </div>
-            <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-3.jpg');">
-            </div>
+            <!-- <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-1.jpg');"> -->
+              <div class="swiper-slide hero__swiper-slide">
+                <picture>
+                  <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                  <source media="(min-width: 576px)" srcset="img/bg-hero-slider-1sm.jpg">
+                  <source srcset="img/bg-hero-slider-1-2x.jpg">
+                  <img class="hero__slide" src="img/bg-hero-slider-1.jpg" alt="slide1">
+                </picture>
+              </div>
+            <!-- <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-2.jpg');"> -->
+              <div class="swiper-slide hero__swiper-slide">
+                <picture>
+                  <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                  <source media="(min-width: 576px)" srcset="img/bg-hero-slider-2sm.jpg">
+                  <source srcset="img/bg-hero-slider-2-2x.jpg">
+                  <img class="hero__slide" src="img/bg-hero-slider-2.jpg" alt="slide2">
+                </picture>
+              </div>
+            <!-- <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-3.jpg');"> -->
+              <div class="swiper-slide hero__swiper-slide">
+                <picture>
+                  <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                  <source media="(min-width: 576px)" srcset="img/bg-hero-slider-3sm.jpg">
+                  <source srcset="img/bg-hero-slider-3-2x.jpg">
+                  <img class="hero__slide" src="img/bg-hero-slider-3.jpg" alt="slide3">
+                </picture>
+              </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination hero__swiper-pagination"></div>
 
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar hero__swiper-scrollbar"></div>
         </div>
+
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination hero__swiper-pagination"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar hero__swiper-scrollbar"></div>
         <!-- If we need navigation buttons -->
         <div class="hero__btn-swiper">
           <div class="swiper-button-prev hero__swiper-btn hero__swiper-button-prev"></div>
@@ -547,10 +571,13 @@
             Предварительные выводы: постоянное информационно- пропагандистское обеспечение нашей деятельности однозначно
             фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
             с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости, из-за чего возрастает
-            их&nbsp;статус бесполезности. Прежде всего, постоянное информационно- пропагандистское <a class="projects__link-info" href="#">i</a> обеспечение нашей
+            их&nbsp;статус бесполезности. Прежде всего, постоянное информационно- пропагандистское <a
+              class="projects__link-info" href="#">i</a> обеспечение нашей
             деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений.
-            И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены <a class="projects__link-info" href="#">i</a> исключительно
-            в&nbsp;разрезе маркетинговых и&nbsp;финансовых <a class="projects__link-info" href="#">i</a> предпосылок. Банальные, но&nbsp;неопровержимые выводы,
+            И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены <a
+              class="projects__link-info" href="#">i</a> исключительно
+            в&nbsp;разрезе маркетинговых и&nbsp;финансовых <a class="projects__link-info" href="#">i</a> предпосылок.
+            Банальные, но&nbsp;неопровержимые выводы,
             а&nbsp;также представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые,
             в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной
             неузнаваемости. Подробнее:
@@ -563,15 +590,24 @@
           <div class="swiper projects__swiper">
             <div class="swiper-button-prev projects__btn projects__swiper-button-prev"></div>
             <div class="swiper-wrapper  projects__swiper-wrapper">
-              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-1.png');"></div>
-              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-2.png');"></div>
-              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-3.png');"></div>
-              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-4.png');"></div>
-              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-5.png');"></div>
-              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-6.png');"></div>
-              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-7.png');"></div>
-              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-8.png');"></div>
-              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-9.png');"></div>
+              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-1.png');">
+              </div>
+              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-2.png');">
+              </div>
+              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-3.png');">
+              </div>
+              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-4.png');">
+              </div>
+              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-5.png');">
+              </div>
+              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-6.png');">
+              </div>
+              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-7.png');">
+              </div>
+              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-8.png');">
+              </div>
+              <div class="swiper-slide  projects__swiper-slide" style="background-image: url('img/partners-9.png');">
+              </div>
             </div>
             <div class="swiper-button-next projects__btn projects__swiper-button-next"></div>
 
