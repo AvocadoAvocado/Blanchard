@@ -22,15 +22,29 @@
   <div class="site-container">
     <header class="header">
       <div class="container header__container">
-        <button class="btn btn-reset burger header__burger" type="button">
+        <button class="btn btn-reset burger header__burger header__burger--mobil" type="button">
           <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="25" height="2" transform="matrix(-1 0 0 1 25 0)" fill="white" />
             <path d="M16 8H5.06639e-07V10H16V8Z" fill="white" />
             <path d="M10 16H0V18H10V16Z" fill="white" />
           </svg>
         </button>
+        <button class="btn btn-reset burger header__burger header__burger--sm" type="button">
+          <svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_136320_4880)">
+              <rect width="36" height="3" transform="matrix(-1 0 0 1 36.5 0)" fill="white" />
+              <path d="M28.5 12H0.5V15H28.5V12Z" fill="white" />
+              <path d="M24.5 24H0.5V27H24.5V24Z" fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_136320_4880">
+                <rect width="36" height="27" fill="white" transform="matrix(-1 0 0 1 36.5 0)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
         <a class="logo header__logo" href="#">
-          <img src="img/logo.svg" alt="Логотип художественной галереи">
+          <img class="logo__image" src="img/logo.svg" alt="Логотип художественной галереи">
         </a>
 
         <nav class="nav header__nav">
@@ -66,7 +80,7 @@
 
     <main>
       <section class="hero">
-        <div class="hero__container">
+        <div class="hero__container container">
           <div class="hero__content">
             <h1 class="visually-hidden">Blanchard-художественная галерея</h1>
             <h2 class="site-title hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
@@ -83,32 +97,32 @@
           <div class="swiper-wrapper hero__swiper-wrapper">
             <!-- Slides -->
             <!-- <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-1.jpg');"> -->
-              <div class="swiper-slide hero__swiper-slide">
-                <picture>
-                  <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
-                  <source media="(min-width: 576px)" srcset="img/bg-hero-slider-1sm.jpg">
-                  <source srcset="img/bg-hero-slider-1-2x.jpg">
-                  <img class="hero__slide" src="img/bg-hero-slider-1.jpg" alt="slide1">
-                </picture>
-              </div>
+            <div class="swiper-slide hero__swiper-slide">
+              <picture>
+                <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                <source media="(min-width: 768px)" srcset="img/bg-hero-slider-1sm.jpg">
+                <source srcset="img/bg-hero-slider-1-2x.jpg">
+                <img class="hero__slide" src="img/bg-hero-slider-1.jpg" alt="slide1">
+              </picture>
+            </div>
             <!-- <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-2.jpg');"> -->
-              <div class="swiper-slide hero__swiper-slide">
-                <picture>
-                  <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
-                  <source media="(min-width: 576px)" srcset="img/bg-hero-slider-2sm.jpg">
-                  <source srcset="img/bg-hero-slider-2-2x.jpg">
-                  <img class="hero__slide" src="img/bg-hero-slider-2.jpg" alt="slide2">
-                </picture>
-              </div>
+            <div class="swiper-slide hero__swiper-slide">
+              <picture>
+                <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                <source media="(min-width: 768px)" srcset="img/bg-hero-slider-2sm.jpg">
+                <source srcset="img/bg-hero-slider-2-2x.jpg">
+                <img class="hero__slide" src="img/bg-hero-slider-2.jpg" alt="slide2">
+              </picture>
+            </div>
             <!-- <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-3.jpg');"> -->
-              <div class="swiper-slide hero__swiper-slide">
-                <picture>
-                  <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
-                  <source media="(min-width: 576px)" srcset="img/bg-hero-slider-3sm.jpg">
-                  <source srcset="img/bg-hero-slider-3-2x.jpg">
-                  <img class="hero__slide" src="img/bg-hero-slider-3.jpg" alt="slide3">
-                </picture>
-              </div>
+            <div class="swiper-slide hero__swiper-slide">
+              <picture>
+                <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                <source media="(min-width: 768px)" srcset="img/bg-hero-slider-3sm.jpg">
+                <source srcset="img/bg-hero-slider-3-2x.jpg">
+                <img class="hero__slide" src="img/bg-hero-slider-3.jpg" alt="slide3">
+              </picture>
+            </div>
           </div>
 
         </div>
@@ -127,19 +141,26 @@
       </section>
       <section class="about">
         <div class="container">
-          <h3 class="site-title site-caption about__title">
-            О&nbsp;нас
-          </h3>
-          <p class="site-descr about__descr">
-            Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого
-            участника как способного принимать собственные решения касаемо распределения внутренних резервов
-            и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта влечет
-            за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что
-            высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план
-            целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов
-            и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции
-            набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
-          </p>
+          <div class="row">
+            <div class="col-12 col-md-11 col-lg-10 col-xl-9">
+              <h3 class="site-title site-caption about__title">
+                О&nbsp;нас
+              </h3>
+              <p class="site-descr about__descr">
+                Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
+                каждого
+                участника как способного принимать собственные решения касаемо распределения внутренних резервов
+                и&nbsp;ресурсов. Не&nbsp;следует, однако, забывать, что высококачественный прототип будущего проекта
+                влечет
+                за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает,
+                что
+                высокое качество позиционных исследований создаёт необходимость включения в&nbsp;производственный план
+                целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов
+                и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей оппозиции
+                набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть разоблачены.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
