@@ -276,9 +276,9 @@ body {
 }
 
 .hero__title {
+  display: inline-block;
   font-size: 32px;
   line-height: 44px;
-  text-align: center;
 }
 
 .hero__descr {
@@ -976,5 +976,9 @@ body {
 
 .hero__slide {
   height: 768px;
+}
+
+.hero__content {
+  padding-top: 110px;
 }
 }
