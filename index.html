@@ -22,15 +22,15 @@
   <div class="site-container">
     <header class="header">
       <div class="container header__container">
-        <button class="btn btn-reset burger header__burger header__burger--mobil" type="button">
-          <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="btn btn-reset burger header__burger" type="button">
+          <svg class="header__burger--mobil" width="25" height="18" viewBox="0 0 25 18" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <rect width="25" height="2" transform="matrix(-1 0 0 1 25 0)" fill="white" />
             <path d="M16 8H5.06639e-07V10H16V8Z" fill="white" />
             <path d="M10 16H0V18H10V16Z" fill="white" />
           </svg>
-        </button>
-        <button class="btn btn-reset burger header__burger header__burger--sm" type="button">
-          <svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header__burger--sm" width="37" height="27" viewBox="0 0 37 27" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_136320_4880)">
               <rect width="36" height="3" transform="matrix(-1 0 0 1 36.5 0)" fill="white" />
               <path d="M28.5 12H0.5V15H28.5V12Z" fill="white" />
@@ -68,12 +68,23 @@
             Войти
           </button>
         </nav>
-        <button class="btn-reset search" type="button">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="btn-reset search header__search" type="button">
+          <svg class="header__search--mobil" width="18" height="19" viewBox="0 0 18 19" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.0002 8C16.0002 11.3137 13.3139 14 10.0002 14C6.68648 14 4.00019 11.3137 4.00019 8C4.00019 4.68629 6.68648 2 10.0002 2C13.3139 2 16.0002 4.68629 16.0002 8ZM18.0002 8C18.0002 12.4183 14.4185 16 10.0002 16C8.15297 16 6.45197 15.3739 5.09782 14.3224L1.41617 18.0041L0.00195312 16.5898L3.68288 12.9089C2.62828 11.5537 2.00019 9.8502 2.00019 8C2.00019 3.58172 5.58191 0 10.0002 0C14.4185 0 18.0002 3.58172 18.0002 8Z"
+              fill="white" />
+          </svg>
+          <svg class="header__search--sm" width="28" height="28" viewBox="0 0 28 28" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M24.5006 12C24.5006 16.9706 20.4712 21 15.5006 21C10.5301 21 6.50063 16.9706 6.50063 12C6.50063 7.02944 10.5301 3 15.5006 3C20.4712 3 24.5006 7.02944 24.5006 12ZM27.5006 12C27.5006 18.6274 22.128 24 15.5006 24C12.7287 24 10.1762 23.0601 8.14456 21.4816L2.62132 27.0049L0.5 24.8836L6.02271 19.3609C4.44199 17.3284 3.50063 14.7742 3.50063 12C3.50063 5.37258 8.87322 0 15.5006 0C22.128 0 27.5006 5.37258 27.5006 12Z"
               fill="white" />
           </svg>
+          <svg class="header__search--lg" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58154 21.0461)" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+            </svg>
         </button>
       </div>
     </header>
@@ -140,9 +151,9 @@
         </div>
       </section>
       <section class="about">
-        <div class="container">
+        <div class="container about__container">
           <div class="row">
-            <div class="col-12 col-md-11 col-lg-10 col-xl-9">
+            <div class="col-12 col-lg-10 col-xl-9 about__padding">
               <h3 class="site-title site-caption about__title">
                 О&nbsp;нас
               </h3>
@@ -169,68 +180,70 @@
           <h3 class="site-title site-caption gallery__title">
             Галерея
           </h3>
-          <form class="form gallery__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <fieldset class="form__filter-part">
-              <legend class="form__filter-legend">Фильтр:</legend>
-              <label class="visually-hidden">Вид изобразительного искусства</label>
-              <select class="form__filter-select" name="select">
-                <option value="painting">Живопись</option>
-                <option value="picture">Рисунок</option>
-                <option value="sculpture">Скульптура</option>
-              </select>
-              <script>
-                const element = document.querySelector('select');
-                const choices = new Choices(element, {
-                  searchEnabled: false
-                });
-              </script>
+          <div class="container gallery__container-bootstrap">
+            <form class="row form gallery__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+              <fieldset class="col-12 col-sm-6 col-lg-10 col-xl-9 form__filter-part">
+                <legend class="form__filter-legend">Фильтр:</legend>
+                <label class="visually-hidden">Вид изобразительного искусства</label>
+                <select class="form__filter-select" name="select">
+                  <option value="painting">Живопись</option>
+                  <option value="picture">Рисунок</option>
+                  <option value="sculpture">Скульптура</option>
+                </select>
+                <script>
+                  const element = document.querySelector('select');
+                  const choices = new Choices(element, {
+                    searchEnabled: false
+                  });
+                </script>
 
-              <div class="form__filter-gallery">
-                <label class="form__filter-checkbox" for="19century">
-                  <input class="form__filter-feature" id="19century" type="checkbox" name="19century">
-                  <span class="form__filter-period">XIX век</span>
-                </label>
-                <label class="form__filter-checkbox" for="20century">
-                  <input class="form__filter-feature" id="20century" type="checkbox" name="20century" checked>
-                  <span class="form__filter-period">XX век</span>
-                </label>
-                <label class="form__filter-checkbox" for="modernity">
-                  <input class="form__filter-feature" id="modernity" type="checkbox" name="modernity">
-                  <span class="form__filter-period">Современность</span>
-                </label>
-              </div>
-            </fieldset>
-          </form>
+                <div class="form__filter-gallery">
+                  <label class="form__filter-checkbox" for="19century">
+                    <input class="form__filter-feature" id="19century" type="checkbox" name="19century">
+                    <span class="form__filter-period">XIX век</span>
+                  </label>
+                  <label class="form__filter-checkbox" for="20century">
+                    <input class="form__filter-feature" id="20century" type="checkbox" name="20century" checked>
+                    <span class="form__filter-period">XX век</span>
+                  </label>
+                  <label class="form__filter-checkbox" for="modernity">
+                    <input class="form__filter-feature" id="modernity" type="checkbox" name="modernity">
+                    <span class="form__filter-period">Современность</span>
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
           <!-- Slider main container -->
           <div class="swiper gallery__swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery__swiper-slide">
                 <picture>
                   <source srcset="img/gallery-Kazimir-Malevich-1-2x.jpg">
                   <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-1.jpg" alt="composition-1">
                 </picture>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery__swiper-slide">
                 <picture>
                   <source srcset="img/gallery-Kazimir-Malevich-2-2x.jpg">
                   <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-2.jpg" alt="composition-2">
                 </picture>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery__swiper-slide">
                 <picture>
                   <source srcset="img/gallery-Kazimir-Malevich-3-2x.jpg">
                   <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-3.jpg" alt="composition-3">
                 </picture>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery__swiper-slide">
                 <picture>
                   <source srcset="img/gallery-Kazimir-Malevich-4-2x.jpg">
                   <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-4.jpg" alt="composition-4">
                 </picture>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide gallery__swiper-slide">
                 <picture>
                   <source srcset="img/gallery-Kazimir-Malevich-5-2x.jpg">
                   <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-5.jpg" alt="composition-5">
@@ -238,10 +251,14 @@
               </div>
             </div>
             <!-- If we need pagination -->
-            <div class="gallery__swiper-box">
-              <div class="gallery__swiper-btn gallery__button-prev swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-              <div class="gallery__swiper-btn gallery__button-next swiper-button-next"></div>
+            <div class="container">
+              <div class="row row__pagination">
+                <div class="col-12 col-sm-2 gallery__swiper-box">
+                  <div class="gallery__swiper-btn gallery__button-prev swiper-button-prev"></div>
+                  <div class="swiper-pagination gallery__swiper-pagination"></div>
+                  <div class="gallery__swiper-btn gallery__button-next swiper-button-next"></div>
+                </div>
+              </div>
             </div>
           </div>
           <!--
