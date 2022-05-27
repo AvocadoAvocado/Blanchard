@@ -12,7 +12,7 @@ let swiper = new Swiper('.gallery__swiper', {
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
-  }
+  },
 })
 
 let mySwiper = new Swiper('.hero__swiper', {
