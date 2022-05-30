@@ -13,6 +13,12 @@ let swiper = new Swiper('.gallery__swiper', {
     el: '.swiper-pagination',
     type: 'fraction',
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+  }
 })
 
 let mySwiper = new Swiper('.hero__swiper', {
