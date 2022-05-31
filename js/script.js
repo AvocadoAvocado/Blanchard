@@ -43,8 +43,6 @@ let mySlider = new Swiper('.card-preview__swiper', {
     type: 'bullets',
     clicable: true,
   },
-
-  autoHeight: true,
 })
 
 var buttonSwiper = new Swiper(".projects__swiper", {

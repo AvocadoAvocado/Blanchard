@@ -111,8 +111,9 @@ body {
 
 .container {
   max-width: none;
+  padding-left: 15px;
+  padding-right: 15px;
   /* max-width: 1800px;
-
   padding: 0 15px;
   margin: 0 auto; */
 }
@@ -478,9 +479,9 @@ body {
 
 .form__filter-checkbox span {
   position: relative;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   color: #fff;
 }
 
@@ -692,7 +693,6 @@ body {
 }
 
 .ac-text {
-  max-width: 80%;
   margin: 20px 0;
   margin-bottom: 0;
   line-height: 32px;
@@ -748,6 +748,14 @@ body {
   padding-top: 17px;
 }
 
+.card-preview__box {
+  min-height: 463px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .card-preview__location {
   display: flex;
   max-width: 141px;
@@ -767,7 +775,7 @@ body {
 }
 
 .card-preview__descr {
-  margin-bottom: 80px;
+  margin-bottom: 0;
   line-height: 32px;
 }
 
@@ -1176,6 +1184,11 @@ body {
 
   }
 
+  /* .gallery */
+  .gallery {
+    background-image: url(../img/bg-gallery-sm.jpg);
+  }
+
   /* .gallery-pagination__container {
     padding-right: 0;
     padding-left: 0;
@@ -1203,8 +1216,18 @@ body {
     padding-bottom: 30px;
   }
 
-  .accordion__list-artist {
+  .accordion__box-list {
+    display: flex;
+    flex-direction: row;
+  }
 
+  .accordion__name-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ac-text:not(:last-child) {
+    padding-right: 12px;
   }
 }
 
