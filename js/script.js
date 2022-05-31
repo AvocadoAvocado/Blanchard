@@ -41,17 +41,31 @@ let mySlider = new Swiper('.card-preview__swiper', {
   pagination: {
     el: '.card-preview__pagination',
     type: 'bullets',
-    clicable: true,
+    clickable: 'boolean',
   },
+  breakpoints: {
+    768: {
+      slidesPerGroup: 4,
+      slidesPerView: 2,
+      spaceBetween: 34
+    },
+  }
 })
 
 var buttonSwiper = new Swiper(".projects__swiper", {
-  effect: 'fade',
+  //effect: 'fade',
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 32
+    },
+  }
 });
 
 // burger
