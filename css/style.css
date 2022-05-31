@@ -685,7 +685,6 @@ body {
   margin-left: 25px;
 }
 
-
 .ac-caption {
   margin-bottom: 5px;
 }
@@ -699,6 +698,10 @@ body {
   margin: 20px 0;
   margin-bottom: 0;
   line-height: 32px;
+}
+
+.accordion__list-artist:first-child {
+  margin-top: 20px;
 }
 
 .ac-link {
@@ -939,6 +942,10 @@ body {
   border-radius: 100px;
   border: 2px solid #9d5cd0;
   color: #9d5cd0;
+}
+
+.contacts__btn-more {
+  display: none;
 }
 
 .contacts__form {
@@ -1224,6 +1231,11 @@ body {
     padding-bottom: 30px;
   }
 
+  .accordion__list-artist {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
   .accordion__box-list {
     display: flex;
     flex-direction: row;
@@ -1248,16 +1260,25 @@ body {
   }
 
   .form__contaiher-flex {
-    display: flex;
     flex-direction: row;
   }
 
-  .form__input {
+  /* .form__input {
     flex-grow: 1;
-  }
+  }*/
 
   .form__input:not(:last-child) {
     margin-right: 20px;
+  }
+
+  .contacts__btn-more {
+    display: block;
+    padding-left: 5px;
+  }
+
+  .contacts__btn {
+    padding-right: 44px;
+    padding-left: 44px;
   }
 }
 
