@@ -96,15 +96,15 @@
     <main>
       <section class="hero">
         <div class="hero__container container">
-          <div class="hero__content">
-            <h1 class="visually-hidden">Blanchard-художественная галерея</h1>
-            <h2 class="site-title hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
-            <p class="site-descr hero__descr">
-              Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
-              предпосылки для новых предложений.
-            </p>
-            <button class="btn btn-reset hero__btn" type="button">Подписаться на&nbsp;рассылку</button>
-          </div>
+            <div class="hero__content">
+              <h1 class="visually-hidden">Blanchard-художественная галерея</h1>
+              <h2 class="site-title hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
+              <p class="site-descr hero__descr">
+                Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
+                предпосылки для новых предложений.
+              </p>
+              <button class="btn btn-reset hero__btn" type="button">Подписаться на&nbsp;рассылку</button>
+            </div>
         </div>
         <!-- Slider main container -->
         <div class="swiper hero__swiper">
@@ -115,6 +115,9 @@
             <div class="swiper-slide hero__swiper-slide">
               <picture>
                 <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                <source srcset="img/bg-hero-slider-1md-2x.jpg">
+                <source media="(min-width: 1024px)" srcset="img/bg-hero-slider-1md.jpg">
+                <source srcset="img/bg-hero-slider-1sm-2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/bg-hero-slider-1sm.jpg">
                 <source srcset="img/bg-hero-slider-1-2x.jpg">
                 <img class="hero__slide" src="img/bg-hero-slider-1.jpg" alt="slide1">
@@ -124,6 +127,9 @@
             <div class="swiper-slide hero__swiper-slide">
               <picture>
                 <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                <source srcset="img/bg-hero-slider-2md-2x.jpg">
+                <source media="(min-width: 1024px)" srcset="img/bg-hero-slider-2md.jpg">
+                <source srcset="img/bg-hero-slider-2sm-2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/bg-hero-slider-2sm.jpg">
                 <source srcset="img/bg-hero-slider-2-2x.jpg">
                 <img class="hero__slide" src="img/bg-hero-slider-2.jpg" alt="slide2">
@@ -133,6 +139,9 @@
             <div class="swiper-slide hero__swiper-slide">
               <picture>
                 <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                <source srcset="img/bg-hero-slider-3md-2x.jpg">
+                <source media="(min-width: 1024px)" srcset="img/bg-hero-slider-3md.jpg">
+                <source srcset="img/bg-hero-slider-3sm-2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/bg-hero-slider-3sm.jpg">
                 <source srcset="img/bg-hero-slider-3-2x.jpg">
                 <img class="hero__slide" src="img/bg-hero-slider-3.jpg" alt="slide3">
@@ -157,7 +166,7 @@
       <section class="about container-wrapper">
         <div class="container about__container">
           <div class="row">
-            <div class="col-12 col-lg-10 col-xl-9 about__padding">
+            <div class="col-12 col-xl-9 about__padding">
               <h3 class="site-title site-caption about__title">
                 О&nbsp;нас
               </h3>
@@ -184,84 +193,90 @@
           <h3 class="site-title site-caption gallery__title">
             Галерея
           </h3>
-          <div class="container gallery__container-bootstrap">
-            <form class="row form gallery__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-              <fieldset class="col-12 col-sm-6 col-lg-10 col-xl-9 form__filter-part">
-                <legend class="form__filter-legend">Фильтр:</legend>
-                <label class="visually-hidden">Вид изобразительного искусства</label>
-                <select class="form__filter-select" name="select">
-                  <option value="painting">Живопись</option>
-                  <option value="picture">Рисунок</option>
-                  <option value="sculpture">Скульптура</option>
-                </select>
-                <script>
-                  const element = document.querySelector('select');
-                  const choices = new Choices(element, {
-                    searchEnabled: false
-                  });
+          <div class="gallery__container-column">
+            <div class="gallery__container-bootstrap">
+              <form class="row form gallery__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <fieldset class="col-12 col-sm-6 col-lg-4 col-xl-9 form__filter-part">
+                  <div class="form__container-position">
+                    <div class="form__select-gallery">
+                      <legend class="form__filter-legend">Фильтр:</legend>
+                      <label class="visually-hidden">Вид изобразительного искусства</label>
+                      <select class="form__filter-select" name="select">
+                        <option value="painting">Живопись</option>
+                        <option value="picture">Рисунок</option>
+                        <option value="sculpture">Скульптура</option>
+                      </select>
+                      <script>
+                        const element = document.querySelector('select');
+                        const choices = new Choices(element, {
+                          searchEnabled: false
+                        });
 
-                </script>
+                      </script>
+                    </div>
 
-                <div class="form__filter-gallery">
-                  <label class="form__filter-checkbox" for="19century">
-                    <input class="form__filter-feature" id="19century" type="checkbox" name="19century">
-                    <span class="form__filter-period">XIX век</span>
-                  </label>
-                  <label class="form__filter-checkbox" for="20century">
-                    <input class="form__filter-feature" id="20century" type="checkbox" name="20century" checked>
-                    <span class="form__filter-period">XX век</span>
-                  </label>
-                  <label class="form__filter-checkbox" for="modernity">
-                    <input class="form__filter-feature" id="modernity" type="checkbox" name="modernity">
-                    <span class="form__filter-period">Современность</span>
-                  </label>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-          <!-- Slider main container -->
-          <div class="swiper gallery__swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide gallery__swiper-slide">
-                <picture>
-                  <source srcset="img/gallery-Kazimir-Malevich-1-2x.jpg">
-                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-1.jpg" alt="composition-1">
-                </picture>
-              </div>
-              <div class="swiper-slide gallery__swiper-slide">
-                <picture>
-                  <source srcset="img/gallery-Kazimir-Malevich-2-2x.jpg">
-                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-2.jpg" alt="composition-2">
-                </picture>
-              </div>
-              <div class="swiper-slide gallery__swiper-slide">
-                <picture>
-                  <source srcset="img/gallery-Kazimir-Malevich-3-2x.jpg">
-                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-3.jpg" alt="composition-3">
-                </picture>
-              </div>
-              <div class="swiper-slide gallery__swiper-slide">
-                <picture>
-                  <source srcset="img/gallery-Kazimir-Malevich-4-2x.jpg">
-                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-4.jpg" alt="composition-4">
-                </picture>
-              </div>
-              <div class="swiper-slide gallery__swiper-slide">
-                <picture>
-                  <source srcset="img/gallery-Kazimir-Malevich-5-2x.jpg">
-                  <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-5.jpg" alt="composition-5">
-                </picture>
-              </div>
+                    <div class="form__filter-gallery">
+                      <label class="form__filter-checkbox" for="19century">
+                        <input class="form__filter-feature" id="19century" type="checkbox" name="19century">
+                        <span class="form__filter-period">XIX век</span>
+                      </label>
+                      <label class="form__filter-checkbox" for="20century">
+                        <input class="form__filter-feature" id="20century" type="checkbox" name="20century" checked>
+                        <span class="form__filter-period">XX век</span>
+                      </label>
+                      <label class="form__filter-checkbox" for="modernity">
+                        <input class="form__filter-feature" id="modernity" type="checkbox" name="modernity">
+                        <span class="form__filter-period">Современность</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
             </div>
-            <!-- If we need pagination -->
-            <div class="container gallery-pagination__container">
-              <div class="row row__pagination">
-                <div class="col-12 col-xs-6 col-sm-2 gallery__swiper-box">
-                  <div class="gallery__swiper-btn gallery__button-prev swiper-button-prev"></div>
-                  <div class="swiper-pagination gallery__swiper-pagination"></div>
-                  <div class="gallery__swiper-btn gallery__button-next swiper-button-next"></div>
+            <!-- Slider main container -->
+            <div class="swiper gallery__swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide gallery__swiper-slide">
+                  <picture>
+                    <source srcset="img/gallery-Kazimir-Malevich-1-2x.jpg">
+                    <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-1.jpg" alt="composition-1">
+                  </picture>
+                </div>
+                <div class="swiper-slide gallery__swiper-slide">
+                  <picture>
+                    <source srcset="img/gallery-Kazimir-Malevich-2-2x.jpg">
+                    <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-2.jpg" alt="composition-2">
+                  </picture>
+                </div>
+                <div class="swiper-slide gallery__swiper-slide">
+                  <picture>
+                    <source srcset="img/gallery-Kazimir-Malevich-3-2x.jpg">
+                    <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-3.jpg" alt="composition-3">
+                  </picture>
+                </div>
+                <div class="swiper-slide gallery__swiper-slide">
+                  <picture>
+                    <source srcset="img/gallery-Kazimir-Malevich-4-2x.jpg">
+                    <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-4.jpg" alt="composition-4">
+                  </picture>
+                </div>
+                <div class="swiper-slide gallery__swiper-slide">
+                  <picture>
+                    <source srcset="img/gallery-Kazimir-Malevich-5-2x.jpg">
+                    <img class="swiper-slide__image" src="img/gallery-Kazimir-Malevich-5.jpg" alt="composition-5">
+                  </picture>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="container gallery-pagination__container">
+                <div class="row row__pagination">
+                  <div class="col-12 col-xs-6 col-sm-2 gallery__swiper-box">
+                    <div class="gallery__swiper-btn gallery__button-prev swiper-button-prev"></div>
+                    <div class="swiper-pagination gallery__swiper-pagination"></div>
+                    <div class="gallery__swiper-btn gallery__button-next swiper-button-next"></div>
+                  </div>
                 </div>
               </div>
             </div>
