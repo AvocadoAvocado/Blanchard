@@ -15,6 +15,7 @@ let swiper = new Swiper('.gallery__swiper', {
   },
   breakpoints: {
     576: {
+      slidesPerGroup: 2,
       slidesPerView: 2,
       spaceBetween: 30
     },
@@ -45,7 +46,7 @@ let mySlider = new Swiper('.card-preview__swiper', {
   },
   breakpoints: {
     768: {
-      slidesPerGroup: 4,
+      slidesPerGroup: 2,
       slidesPerView: 2,
       spaceBetween: 34
     },
@@ -62,6 +63,7 @@ var buttonSwiper = new Swiper(".projects__swiper", {
 
   breakpoints: {
     768: {
+      slidesPerGroup: 1,
       slidesPerView: 2,
       spaceBetween: 32
     },

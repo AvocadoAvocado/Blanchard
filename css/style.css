@@ -334,10 +334,6 @@ body {
   padding-bottom: 50px;
 }
 
-.about__title {
-
-}
-
 .about__descr {
   margin-bottom: 0;
   font-size: 14px;
@@ -352,10 +348,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000;
-}
-
-.gallery__container {
-  min-height: 800px;
 }
 
 .gallery__title {
@@ -672,6 +664,10 @@ body {
   padding-top: 20px;
 }
 
+.accordion__box-sm {
+  display: none;
+}
+
 .accordion__container-flex {
   display: flex;
 }
@@ -691,17 +687,14 @@ body {
 
 .accordion__name-box {
   margin-top: 20px;
+  padding-top: 20px;
   border-top: 1px solid #9d5cd0;
 }
 
 .ac-text {
-  margin: 20px 0;
+  margin-top: 0;
   margin-bottom: 0;
   line-height: 32px;
-}
-
-.accordion__list-artist:first-child {
-  margin-top: 20px;
 }
 
 .ac-link {
@@ -993,8 +986,13 @@ body {
   background-image: url(../img/Telegram-icon.svg);
 }
 
-.map {
+.container-map {
   background-color: #ececec;
+}
+
+.map {
+  width: 100%;
+  height: 320px
 }
 
 [class*="copyrights-pane"] {
@@ -1247,9 +1245,31 @@ body {
     padding-right: 0;
   }
 
-  .ac-text:not(:last-child) {
-    padding-right: 12px;
+  .accordion__box-mobil {
+    display: none;
   }
+
+  .accordion__box-sm {
+    display: block;
+    border: 2px solid #b7b7b7;
+    padding: 12px
+  }
+
+  .accordion__container-flex {
+    align-items: center;
+  }
+
+  .ac-caption {
+    font-size: 24px;
+  }
+
+  .ac-descr {
+    line-height: 22px;
+  }
+
+  /* .ac-text:not(:last-child) {
+    padding-right: 12px;
+  } */
 
   .projects__link {
     display: inline-block;
@@ -1271,14 +1291,36 @@ body {
     margin-right: 20px;
   }
 
+  .form__input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   .contacts__btn-more {
     display: block;
     padding-left: 5px;
   }
 
   .contacts__btn {
-    padding-right: 44px;
-    padding-left: 44px;
+    padding: 15px 44px;
+  }
+
+  .map {
+    height: 700px;
+  }
+
+  .footer__container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .social  {
+    margin-bottom: 0;
+  }
+
+  .footer {
+    min-height: 140px;
+    display: flex;
   }
 }
 
