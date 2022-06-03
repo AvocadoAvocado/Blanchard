@@ -598,6 +598,8 @@ body {
 
 .accordion-list {
   margin-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .accordion__content {
