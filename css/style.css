@@ -522,10 +522,6 @@ body {
   justify-content: center;
 }
 
-.gallery__swiper-slide--sm-lg {
-  opacity: 0;
-}
-
 .gallery__swiper-btn:after, .gallery__swiper-btn:after {
   display: flex;
   align-items: center;
@@ -1215,10 +1211,6 @@ body {
     min-width: 21%;
   }
 
-  .gallery__swiper-slide--sm-lg {
-    opacity: 1;
-  }
-
   .swiper-slide__image {
     width: 315px;
   }
@@ -1350,6 +1342,15 @@ body {
   .gallery__container-column {
     display: flex;
     flex-direction: row;
+  }
+
+  .catalog__content-dates {
+    flex-direction: row-reverse;
+  }
+
+  .accordion__list-artist {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .form__container-position {
