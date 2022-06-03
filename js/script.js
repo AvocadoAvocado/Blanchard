@@ -69,7 +69,7 @@ var buttonSwiper = new Swiper(".projects__swiper", {
   breakpoints: {
     768: {
       slidesPerGroup: 1,
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 32
     },
   }
