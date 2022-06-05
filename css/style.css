@@ -898,14 +898,6 @@ body {
 }
 
 /* contacts */
-.contacts__container {
-  padding: 0;
-}
-
-.contacts__container-padding {
-  padding: 0 15px;
-}
-
 .contacts__caption {
   display:block;
   font-weight: 600;
@@ -919,36 +911,34 @@ body {
 }
 
 .contacts__address {
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
 
-/* .form__contaiher-flex{
-  display: flex;
-  flex-direction: column;
+.contacts__form {
+  margin: 0;
+  padding: 0;
 }
 
 .form__input {
+  width: 100%;
   padding: 10px 20px;
   border-radius: 100px;
   border: 1px solid #333;
 }
 
 .contacts__btn {
-  display: flex;
-  justify-content: center;
+  width: 100%;
   padding: 10px 0;
   border-radius: 100px;
   border: 2px solid #9d5cd0;
+  font-size: 12px;
+  line-height: 16px;
   color: #9d5cd0;
 }
 
 .contacts__btn-sm {
   display: none;
 }
-
-.contacts__form {
-  margin-bottom: 20px;
-} */
 
 .contacts__messengers {
   margin-bottom: 20px;
@@ -1270,15 +1260,50 @@ body {
     padding-right: 12px;
   } */
 
+  .contacts__form {
+    margin-bottom: 30px;
+  }
+
   .projects__link {
     display: inline-block;
   }
 
-  .contacts__container-padding {
-    padding: 0;
+  .form__posicion-container {
+    display: flex;
+    flex-direction: row;
   }
 
-  /* .form__contaiher-flex {
+  /* .contacts__form  {
+    display: flex;
+  } */
+
+  /* .form__flex-container {
+    display: flex;
+  }
+
+  .form__input {
+    flex-basis: 50%;
+    flex-grow: 1;
+  } */
+
+  .contacts__btn--mobil {
+    display: none;
+  }
+
+  .contacts__btn-sm {
+    display: block;
+  }
+
+  .messengers__text {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  /* .form__input {
+    margin-bottom: 0;
+  }
+
+  .form__contaiher-flex {
     flex-direction: row;
   } */
 
@@ -1297,14 +1322,6 @@ body {
 
   .contacts__btn {
     padding: 15px 0;
-  }
-
-  .contacts__btn--mobil {
-    display: none;
-  }
-
-  .contacts__btn-sm {
-    display: block;
   } */
 
   .map {
@@ -1382,6 +1399,14 @@ body {
     height: 100%;
   }
 
+  .form__input {
+    max-width: 95%;
+  }
+
+  .form__col-container--field {
+    padding: 0;
+  }
+
   .form__container-position {
     justify-content: space-between;
   }
@@ -1419,5 +1444,13 @@ body {
   .accordion__pic {
     min-width: 251px;
     min-height: 165px;
+  }
+
+  .contacts__messengers {
+    padding-left: 80px;
+  }
+
+  .messengers__text {
+
   }
 }
