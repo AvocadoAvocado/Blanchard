@@ -45,10 +45,15 @@ let mySlider = new Swiper('.card-preview__swiper', {
     clickable: 'boolean',
   },
   breakpoints: {
+    576: {
+      slidesPerGroup: 2,
+      slidesPerView: 2,
+      spaceBetween: 24
+    },
     768: {
       slidesPerGroup: 2,
       slidesPerView: 2,
-      spaceBetween: 34
+      spaceBetween: 34,
     },
     1024: {
       slidesPerGroup: 3,
