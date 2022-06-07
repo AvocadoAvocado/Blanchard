@@ -19,6 +19,11 @@ let swiper = new Swiper('.gallery__swiper', {
       slidesPerView: 2,
       spaceBetween: 30
     },
+    1200: {
+      slidesPerGroup: 3,
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
   }
 })
 

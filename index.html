@@ -111,10 +111,10 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper hero__swiper-wrapper">
             <!-- Slides -->
-            <!-- <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-1.jpg');"> -->
             <div class="swiper-slide hero__swiper-slide">
               <picture>
-                <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                <source srcset="img/bg-hero-slider-1lg-2x.jpg">
+                <source media="(min-width: 1200px)" srcset="img/bg-hero-slider-1lg.jpg">
                 <source srcset="img/bg-hero-slider-1md-2x.jpg">
                 <source media="(min-width: 1024px)" srcset="img/bg-hero-slider-1md.jpg">
                 <source srcset="img/bg-hero-slider-1sm-2x.jpg">
@@ -123,10 +123,11 @@
                 <img class="hero__slide" src="img/bg-hero-slider-1.jpg" alt="slide1">
               </picture>
             </div>
-            <!-- <div class="swiper-slide hero__swiper-slide" style="background-image: url('img/bg-hero-slider-2.jpg');"> -->
+
             <div class="swiper-slide hero__swiper-slide">
               <picture>
-                <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                <source srcset="img/bg-hero-slider-2lg-2x.jpg">
+                <source media="(min-width: 1200px)" srcset="img/bg-hero-slider-2lg.jpg">
                 <source srcset="img/bg-hero-slider-2md-2x.jpg">
                 <source media="(min-width: 1024px)" srcset="img/bg-hero-slider-2md.jpg">
                 <source srcset="img/bg-hero-slider-2sm-2x.jpg">
@@ -139,6 +140,8 @@
             <div class="swiper-slide hero__swiper-slide">
               <picture>
                 <!-- <source media="(max-width: 576px)" srcset="img/logo-320.svg"> -->
+                <source srcset="img/bg-hero-slider-3lg-2x.jpg">
+                <source media="(min-width: 1200px)" srcset="img/bg-hero-slider-3lg.jpg">
                 <source srcset="img/bg-hero-slider-3md-2x.jpg">
                 <source media="(min-width: 1024px)" srcset="img/bg-hero-slider-3md.jpg">
                 <source srcset="img/bg-hero-slider-3sm-2x.jpg">
@@ -194,9 +197,9 @@
             Галерея
           </h3>
           <div class="gallery__container-column">
-            <div class="gallery__container-bootstrap">
+            <div class="col-12 col-sm-6 col-lg-4 col-xxl-4 gallery__container-bootstrap">
               <form class="form gallery__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-                <fieldset class="col-12 col-sm-6 col-lg-4 col-xl-9 form__filter-part">
+                <fieldset class="form__filter-part">
                   <div class="form__container-position">
                     <div class="form__select-gallery">
                       <legend class="form__filter-legend">Фильтр:</legend>
@@ -288,7 +291,7 @@
                 </div>
               </div>
               <!-- If we need pagination -->
-              <div class="container gallery-pagination__container">
+              <div class="gallery-pagination__container">
                 <div class="row row__pagination">
                   <div class="col-12 col-xs-6 col-sm-2 gallery__swiper-box">
                     <div class="gallery__swiper-btn gallery__button-prev swiper-button-prev"></div>
@@ -307,7 +310,7 @@
           <h3 class="site-title site-caption catalog__title">
             Каталог
           </h3>
-          <p class="site-descr catalog__descr">
+          <p class="col-lg-10 site-descr catalog__descr">
             Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
             политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего
             лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии
@@ -315,8 +318,8 @@
             на&nbsp;независимые элементы.
           </p>
           <div class="row catalog__content-dates">
-            <ul class="col-12 col-lg-6 col-xl-9 accordion-list list-reset">
-              <li class="col-12 col-xl-9 catalog__item accordion catalog__item--open">
+            <ul class="col-12 col-lg-6 accordion-list list-reset">
+              <li class="catalog__item accordion catalog__item--open">
                 <h4 class="ac-header accordion__heading catalog__subtitle site-title site-subtitle">
                   <button class="btn-reset dtn accordion__control" type="button">C&nbsp;1400 по&nbsp;1499&nbsp;гг.
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -370,7 +373,7 @@
                 </div>
               </li>
 
-              <li class="col-12 col-xl-9 catalog__item accordion catalog__item--open">
+              <li class="catalog__item accordion catalog__item--open">
                 <h4 class="ac-header accordion__heading catalog__subtitle site-title site-subtitle">
                   <button class="btn-reset dtn accordion__control" type="button">C&nbsp;1500 по&nbsp;1599&nbsp;гг.
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -387,7 +390,7 @@
                 </div>
               </li>
 
-              <li class="col-12 col-xl-9 catalog__item accordion catalog__item--open">
+              <li class="catalog__item accordion catalog__item--open">
                 <h4 class="ac-header accordion__heading catalog__subtitle site-title site-subtitle">
                   <button class="btn-reset dtn accordion__control" type="button">C&nbsp;1600 по&nbsp;1699&nbsp;гг.
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -416,7 +419,7 @@
                 </div>
               </li>
 
-              <li class="col-12 col-xl-9 catalog__item accordion catalog__item--open">
+              <li class="catalog__item accordion catalog__item--open">
                 <h4 class="ac-header accordion__heading catalog__subtitle site-title site-subtitle">
                   <button class="btn-reset dtn accordion__control" type="button">C&nbsp;1700 по&nbsp;1799&nbsp;гг.
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -433,7 +436,7 @@
                 </div>
               </li>
 
-              <li class="col-12 col-xl-9 catalog__item accordion catalog__item--open">
+              <li class="catalog__item accordion catalog__item--open">
                 <h4 class="ac-header accordion__heading catalog__subtitle site-title site-subtitle">
                   <button class="btn-reset dtn accordion__control" type="button">C&nbsp;1800 по&nbsp;1899&nbsp;гг.
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -450,7 +453,7 @@
                 </div>
               </li>
 
-              <li class="col-12 col-xl-9 catalog__item accordion catalog__item--open">
+              <li class="catalog__item accordion catalog__item--open">
                 <h4 class="ac-header accordion__heading catalog__subtitle site-title site-subtitle">
                   <button class="btn-reset dtn accordion__control" type="button">C&nbsp;1900 по&nbsp;1999&nbsp;гг.
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -467,7 +470,7 @@
                 </div>
               </li>
 
-              <li class="col-12 col-xl-9 catalog__item accordion catalog__item--open">
+              <li class="catalog__item accordion catalog__item--open">
                 <h4 class="ac-header accordion__heading catalog__subtitle site-title site-subtitle">
                   <button class="btn-reset dtn accordion__control" type="button">C&nbsp;2000&nbsp;г.
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -485,7 +488,7 @@
               </li>
             </ul>
 
-            <div class="col-12 col-lg-6 col-xl-9 catalog__artist card-artist">
+            <div class="col-12 col-lg-6 catalog__artist card-artist">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/catalog-Domenico-Ghirlandaio-sm-2x.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog-Domenico-Ghirlandaio-sm.jpg">
@@ -669,7 +672,7 @@
           <h3 class="site-title site-caption projects__title">
             Проекты
           </h3>
-          <p class="site-descr projects__desct">
+          <p class="col-xl-11 col-xxl-10 site-descr projects__desct">
             Предварительные выводы: постоянное информационно- пропагандистское обеспечение нашей деятельности однозначно
             фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны
             с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершенной неузнаваемости, из-за чего возрастает
@@ -719,7 +722,7 @@
 
       <section class="contacts">
         <div class="container contacts__container">
-          <div class="row g-0">
+          <div class="contacts__row row g-0">
             <address class="col-xl-2 contacts__address">
               <strong class="contacts__caption">
                 Шоурум &#8470;&nbsp;4
@@ -729,21 +732,21 @@
               </span>
             </address>
 
-            <form class="col-xl-8 row gx-3 gy-3 form contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <form class="col-xl-7 row gx-3 gy-3 form contacts__form" action="https://jsonplaceholder.typicode.com/posts"
+              method="post">
               <div class="col-12 col-sm-6 col-lg-4 form__col-container form__col-container--field">
                 <label class="visually-hidden" for="name">Имя</label>
-                <input class="form__input" id="name" type="text" name="name" placeholder="Имя*"
-                  required>
+                <input class="form__input" id="name" type="text" name="name" placeholder="Имя*" required>
               </div>
               <div class="col-12 col-sm-6 col-lg-4 form__col-container form__col-container--field">
                 <label class="visually-hidden" for="tel">Телефон</label>
-                <input class="form__input" id="tel" type="tel" name="tel" placeholder="Телефон*"
-                  required>
+                <input class="form__input" id="tel" type="tel" name="tel" placeholder="Телефон*" required>
               </div>
               <div class="col-6 col-sm-6 col-lg-4 form__col-container">
                 <button class="btn-reset btn contacts__btn contacts__btn--mobil" type="submit">Заказать
                 </button>
-                <button class="btn-reset btn contacts__btn contacts__btn-sm" type="submit">Заказать обратный звонок</button>
+                <button class="btn-reset btn contacts__btn contacts__btn-sm" type="submit">Заказать обратный
+                  звонок</button>
               </div>
             </form>
 
