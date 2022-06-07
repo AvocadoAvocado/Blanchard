@@ -1492,16 +1492,52 @@ body {
   .contacts__messengers {
     padding-left: 0;
   }
-
-  .messengers__text {
-
-  }
 }
 
 @media(min-width: 1400px) {
   .container {
     padding-right: 160px;
     padding-left: 160px;
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+  .header__logo {
+    order: 1;
+  }
+
+  .header__nav {
+    height: auto;
+    order: 2;
+    padding: 0;
+    visibility: visible;
+    position: relative;
+    flex-direction: row;
+    background-color: transparent;
+    transform: translateX(0);
+  }
+
+  .nav-inner__btn-entrance {
+    padding: 11px 0;
+    border: transparent;
+  }
+
+  .header__search {
+    order: 3;
+  }
+
+  .header__nav .nav__list {
+    flex-direction: row;
+  }
+
+  .header__nav .nav__item:not(:last-child) {
+    padding-right: 40px;
+  }
+
+  .nav__close {
+    display: none;
   }
 
   .hero__content {
