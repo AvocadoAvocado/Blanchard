@@ -86,42 +86,70 @@ var buttonSwiper = new Swiper(".projects__swiper", {
 });
 
 // burger
-let burger = document.querySelector('.burger');
-let menu = document.querySelector('.header__nav');
-let menuLinks = menu.querySelectorAll('.nav__link');
-let close = document.querySelector('.nav__close');
+// let burger = document.querySelector('.burger');
+// let menu = document.querySelector('.header__nav');
+// let menuLinks = menu.querySelectorAll('.nav__link');
+// let close = document.querySelector('.nav__close');
 
-burger.addEventListener('click',
+// burger.addEventListener('click',
 
-  function () {
+//   function () {
 
-    burger.classList.toggle('header__burger--active');
+//     burger.classList.toggle('header__burger--active');
 
-    menu.classList.toggle('header__nav--active');
+//     menu.classList.toggle('header__nav--active');
 
-    document.body.classList.toggle('stop-scroll');
-  })
+//     document.body.classList.toggle('stop-scroll');
+//   })
 
-menuLinks.forEach(function (el) {
-  el.addEventListener('click', function () {
+// menuLinks.forEach(function (el) {
+//   el.addEventListener('click', function () {
 
-    burger.classList.remove('header__burger--active');
+//     burger.classList.remove('header__burger--active');
 
-    menu.classList.remove('header__nav--active');
+//     menu.classList.remove('header__nav--active');
 
-    document.body.classList.remove('stop-scroll')
-  })
+//     document.body.classList.remove('stop-scroll')
+//   })
+// })
+
+// close.addEventListener('click',
+//   function () {
+
+//     burger.classList.toggle('header__burger--active');
+
+//     menu.classList.toggle('header__nav--active');
+
+//     document.body.classList.toggle('stop-scroll');
+//   })
+
+//menu-burger - show - header-menu
+//menu-close - hide - header-menu
+//select-btn - toggle - select-list
+
+const burger = document.querySelector(".header__burger");
+const menu = document.querySelector(".header__header-menu");
+const menuClose = document.querySelector(".header__menu-close");
+
+burger.addEventListener('click', function () {
+    menu.classList.add('header__header-menu--visible');
+});
+
+menuClose.addEventListener('click', function (){
+    menu.classList.remove('header__header-menu--visible');
+});
+
+
+
+const selectButtons = document.querySelectorAll('.header__select-btn');
+selectButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        btn.classList.toggle('header__select-btn-toggle');
+
+        const list = btn.nextElementSibling;
+        list.classList.toggle('visible-block');
+    });
 })
-
-close.addEventListener('click',
-  function () {
-
-    burger.classList.toggle('header__burger--active');
-
-    menu.classList.toggle('header__nav--active');
-
-    document.body.classList.toggle('stop-scroll');
-  })
 
 // accordion
 new Accordion('.accordion-list', {
