@@ -127,7 +127,7 @@ var buttonSwiper = new Swiper(".projects__swiper", {
 //menu-close - hide - header-menu
 //select-btn - toggle - select-list
 
-const burger = document.querySelector(".header__burger");
+const burger = document.querySelector(".burger");
 const menu = document.querySelector(".header__header-menu");
 const menuClose = document.querySelector(".header__menu-close");
 
