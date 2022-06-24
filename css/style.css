@@ -1705,6 +1705,7 @@ body {
     flex-direction: row;
     align-items: center;
     flex-grow: 1;
+    overflow: hidden;
     background: initial;
     padding: 0;
   }
@@ -1747,19 +1748,28 @@ body {
   }
 
   .header__select-btn {
+    position: relative;
+    padding-right: 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     color: #fff
   }
 
-  .header__select-btn::after {
-    content: "+";
-    margin-left: 10px;
+  .header__select-btn::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 56%;
+    width: 12px;
+    height: 8px;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 6L1 1' stroke='white'/%3E%3C/svg%3E ");
   }
 
-  .header__select-btn-toggle::after {
-    content: "-";
+  .header__select-btn-toggle::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 6L6 0.999998L1 6' stroke='white'/%3E%3C/svg%3E ");
   }
 
   .header__select-list {
@@ -1770,6 +1780,18 @@ body {
     height: 300px;
     padding: 40px;
     overflow-y: auto;
+  }
+
+  .header__select-list::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .header__select-list::-webkit-scrollbar-track {
+    background-color: #000;
+  }
+
+  .header__select-list::-webkit-scrollbar-thumb {
+    background-color: #fff;
   }
 
   .header__select-item:not(:last-child) {
@@ -1789,7 +1811,89 @@ body {
   }
 
   .header__select-link {
+    padding: 12px 14px;
+    background-repeat: no-repeat;
     color: #fff;
+  }
+
+  .header__select-link--tintoretto {
+    background-image: url(../img/bg-tintoretto.jpg);
+  }
+
+  .header__select-link--friedrich {
+    background-image: url(../img/bg-friedrich.jpg);
+  }
+
+  .header__select-link--leonardo {
+    background-image: url(../img/bg-leonardo.jpg);
+  }
+
+  .header__select-link--verrocchio {
+   background-image: url(../img/bg-verrocchio.jpg);
+  }
+
+  .header__select-link--monet {
+    background-image: url(../img/bg-mone.jpg);
+  }
+
+  .header__select-link--sisley {
+    background-image: url(../img/bg-sisley.jpg);
+  }
+
+  .header__select-link--mane {
+   background-image: url(../img/bg-mane.jpg);
+  }
+
+  .header__select-link--renoir {
+    background-image: url(../img/bg-renoir.jpg);
+  }
+
+  .header__select-link--vangogh {
+    background-image: url(../img/bg-vangogh.jpg);
+  }
+
+  .header__select-link--cezanne {
+    background-image: url(../img/bg-cezanne.jpg);
+  }
+
+  .header__select-link--gauguin {
+    background-image: url(../img/bg-gauguin.jpg);
+  }
+
+  .header__select-link--seurat {
+    background-image: url(../img/bg-seurat.jpg);
+  }
+
+  .header__select-link--kandinsky {
+    background-image: url(../img/bg-kandinsky.jpg);
+  }
+
+  .header__select-link--marinetti {
+    background-image: url(../img/bg-marinetti.jpg);
+  }
+
+  .header__select-link--malevich {
+    background-image: url(../img/bg-malevich.jpg);
+  }
+
+  .header__select-link--picasso {
+    background-image: url(../img/bg-picasso.jpg);
+  }
+
+  .header__select-link--carra {
+    background-image: url(../img/bg-carra.jpg);
+  }
+
+  .header__select-link--pratella {
+    background-image: url(../img/bg-pratella.jpg);
+  }
+
+  .header__select-link--severini {
+    background-image: url(../img/bg-severini.jpg);
+  }
+
+  .header__select-link--balla {
+    background-image: url(../img/bg-balla.jpg);
   }
 
   /*
