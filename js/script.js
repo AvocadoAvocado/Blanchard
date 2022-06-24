@@ -127,6 +127,7 @@ var buttonSwiper = new Swiper(".projects__swiper", {
 //menu-close - hide - header-menu
 //select-btn - toggle - select-list
 
+// burger
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".header__header-menu");
 const menuClose = document.querySelector(".header__menu-close");
@@ -139,8 +140,7 @@ menuClose.addEventListener('click', function (){
     menu.classList.remove('header__header-menu--visible');
 });
 
-
-
+// select-list
 const selectButtons = document.querySelectorAll('.header__select-btn');
 selectButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {

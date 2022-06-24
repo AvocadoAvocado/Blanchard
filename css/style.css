@@ -900,6 +900,10 @@ body {
   object-fit: cover;
 }
 
+.card-preview__button-box {
+  display: none;
+}
+
 /* projects */
 .projects {
   padding-top: 50px;
@@ -1939,6 +1943,35 @@ body {
 
   .hero__swiper {
     height: 679px;
+  }
+
+  .card-preview__swiper-content {
+    position: relative;
+  }
+
+  .card-preview__button-box {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .card-preview__swiper-button-prev {
+    color: transparent;
+  }
+
+  .card-preview__swiper-button-next {
+    right: -27px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ececec;
+  }
+
+  .card-preview__swiper-button-next::after {
+    font-size: 20px;
+    color: #000;
   }
 
   .card-preview__pagination {
