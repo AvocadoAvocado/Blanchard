@@ -945,45 +945,53 @@ body {
 }
 
 .projects__swiper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  margin: 0 48px;
   height: 100%;
 }
 
-.projects__btn {
-  top: 63%;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background-repeat: no-repeat;
-  color: #000;
-  background-color: #ececec;
+.projects__swiper-content {
+  position: relative;
 }
 
-.projects__swiper-button-prev:after, .projects__swiper-button-next:after {
-  font-size: 10px;
-}
-
-.projects__swiper-button-prev, .swiper-rtl .projects__swiper-button-next {
-  left: 0;
-}
-
-.projects__swiper-button-next, .swiper-rtl .projects__swiper-button-prev {
-  right: 0;
-}
-
-.projects__swiper-wrapper {
-  width: 195px;
-  margin: 0 18px;
+.projects__swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .projects__swiper-slide {
-  min-height: 65px;
-  background-size: 195px 65px;
-  background-repeat: no-repeat;
+text-align: center;
+}
+
+.projects__swiper-button-next {
+  right: 0;
+}
+
+.projects__swiper-button-prev {
+  left: 0;
+}
+
+.projects__swiper-button-next::after,
+.projects__swiper-button-prev::after {
+ font-size: 16px;
+ color: #000;
+}
+
+.projects__swiper-btn {
+  top: 59%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ececec;
+}
+
+.projects__slide-image{
+  filter: grayscale(1);
+  transition: .5s;
+}
+
+.projects__slide-image:hover {
+  filter: grayscale(0);
 }
 
 /* contacts */

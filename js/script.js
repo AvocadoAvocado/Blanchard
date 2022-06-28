@@ -69,7 +69,6 @@ let mySlider = new Swiper('.card-preview__swiper', {
 })
 
 var buttonSwiper = new Swiper(".projects__swiper", {
-  //effect: 'fade',
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -78,9 +77,15 @@ var buttonSwiper = new Swiper(".projects__swiper", {
 
   breakpoints: {
     768: {
-      slidesPerGroup: 1,
-      slidesPerView: 1,
-      spaceBetween: 32
+      slidesPerView: 2,
+      spaceBetween: 33,
+      slidesPerGroup: 2,
+    },
+
+    1400: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+      slidesPerGroup: 3,
     },
   }
 });
