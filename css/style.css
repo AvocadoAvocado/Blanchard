@@ -715,6 +715,11 @@ body {
   transition: color .5s;
 }
 
+.accordion--active .accordion__control svg {
+  transform: rotate(180deg);
+  transition: transform .5s ease-in-out;
+}
+
 .catalog__item {
   position: relative;
   margin-top: -1px;
