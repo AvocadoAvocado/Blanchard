@@ -27,7 +27,14 @@
         <a class="logo header__header-logo" href="#">
           <img class="logo__image" src="img/logo.svg" alt="Логотип художественной галереи">
         </a>
-        <button class="btn-reset search header__header-search" type="button"></button>
+        <div class="header__header-search">
+          <button class="btn-reset search search--form" type="button"></button>
+          <form class="header__header-form header__header-form--invis" action="https://jsonplaceholder.typicode.com/posts">
+            <label class="visually-hidden" for="search">поиск</label>
+            <input class="header__search-input" type="search" id="search" name="search">
+            <button class="header__search-close btn btn-reset" aria-label="Закрыть" type="button"></button>
+          </form>
+        </div>
       </div>
       <div class="header__header-menu">
         <nav class="header__menu-nav">
