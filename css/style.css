@@ -1048,6 +1048,28 @@ text-align: center;
   padding-right: 0;
 }
 
+.social__link svg {
+  fill: #cacaca;
+}
+
+.social__link:focus {
+  outline: none;
+}
+
+.social__link:focus svg {
+  fill: #fff;
+}
+
+.social__link:hover svg {
+  cursor: pointer;
+  fill: #fff;
+}
+
+.social__link:active svg {
+  cursor: pointer;
+  fill: #9d5cd0;
+}
+
 /* modal */
 .gallery__modal {
   position: fixed;
@@ -1291,6 +1313,10 @@ text-align: center;
     background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M24.5006 12C24.5006 16.9706 20.4712 21 15.5006 21C10.5301 21 6.50063 16.9706 6.50063 12C6.50063 7.02944 10.5301 3 15.5006 3C20.4712 3 24.5006 7.02944 24.5006 12ZM27.5006 12C27.5006 18.6274 22.128 24 15.5006 24C12.7287 24 10.1762 23.0601 8.14456 21.4816L2.62132 27.0049L0.5 24.8836L6.02271 19.3609C4.44199 17.3284 3.50063 14.7742 3.50063 12C3.50063 5.37258 8.87322 0 15.5006 0C22.128 0 27.5006 5.37258 27.5006 12Z' fill='white'/%3E%3C/svg%3E%0A");
   }
 
+  .header__header-search {
+    padding: 7px 0;
+  }
+
   .hero__swiper {
     height: 768px;
   }
@@ -1433,6 +1459,11 @@ text-align: center;
 
   .social  {
     margin-bottom: 0;
+  }
+
+  .social__link svg {
+    width: 60px;
+    height: 60px;
   }
 
   .footer {
@@ -1908,5 +1939,10 @@ text-align: center;
 
   .gallery__button-next {
     justify-content: flex-end;
+  }
+
+  .social__link svg {
+    width: 45px;
+    height: 45px;
   }
 }
