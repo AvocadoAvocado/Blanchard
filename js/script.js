@@ -201,16 +201,3 @@ buttonSearchClose.addEventListener('click', function (){
   wrapperSearch.classList.remove('header__header-search--position');
   formSearch.classList.add('header__header-form--invis');
 });
-
-/*const searchForm = document.querySelector('.header__search-close');
-
-searchOpen.addEventListener('click', ()=> {
-  searchForm.classList.remove('header__header-search--position')
-  searchOpen.classList.add('header__header-search')
-  console.log('Hello word!')
-})
-
-searchForm.addEventListener('blur', function(){
-  this.style.border = 'none';
-})
-*/
