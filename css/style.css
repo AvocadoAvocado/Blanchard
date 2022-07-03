@@ -713,6 +713,12 @@ body {
   background-color: #9d5cd0;
 }
 
+.accordion__control:active .accordion__span {
+  outline: none;
+  color: #7943a4;
+  background-color: #fff;
+}
+
 .catalog__item svg circle,
 .catalog__item svg path {
   transition: fill .5s;
@@ -726,7 +732,7 @@ body {
   fill: #d1A9f0;
 }
 
-.accordion__control:focus .accordion__icon:focus svg path {
+.accordion__control:focus .accordion__icon svg path {
   fill: #d1A9f0;
 }
 
@@ -736,6 +742,15 @@ body {
 
 .catalog__item:hover svg path {
   fill: #d1a9f0;
+}
+
+.accordion__control:active .accordion__span {
+  color: #7943a4;
+  background-color: #fff;
+}
+
+.accordion__control:active .accordion__icon svg path {
+  fill: #7943a4;
 }
 
 .accordion__container-content {
