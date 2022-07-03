@@ -652,6 +652,10 @@ body {
   flex-grow: 1;
 }
 
+.accordion__control:focus {
+  outline: none;
+}
+
 .accordion__heading {
   margin: 0;
 }
@@ -679,6 +683,14 @@ body {
   border-color: #cacaca;
 }
 
+.catalog__item:focus {
+  border-color:#cacaca;
+}
+
+.catalog__item:focus .accordion__heading button {
+  color: #7943a4;
+}
+
 .catalog__item:hover {
   border-color: #9d5cd0;
 }
@@ -687,9 +699,35 @@ body {
   color: #9d5cd0;
 }
 
+.catalog__item:active {
+  border-color:#7943a4;
+}
+
+.catalog__item:active .accordion__heading button {
+  color: #7943a4;
+}
+
+.accordion__control:focus .accordion__span {
+  outline: none;
+  color: #fff;
+  background-color: #9d5cd0;
+}
+
 .catalog__item svg circle,
 .catalog__item svg path {
   transition: fill .5s;
+}
+
+.accordion__icon:focus {
+  outline: none;
+}
+
+.accordion__control:focus .accordion__icon circle {
+  fill: #d1A9f0;
+}
+
+.accordion__control:focus .accordion__icon:focus svg path {
+  fill: #d1A9f0;
 }
 
 .catalog__item:hover svg circle {
@@ -731,6 +769,10 @@ body {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #9d5cd0;
+}
+
+.accordion__name-box:focus {
+  border-color: #cacaca;
 }
 
 .ac-text {
