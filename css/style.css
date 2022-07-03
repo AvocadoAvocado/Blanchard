@@ -521,6 +521,29 @@ body {
   opacity: 1;
 }
 
+.form__filter-checkbox input[type="checkbox"]:focus + span::before,
+.form__filter-checkbox input[type="checkbox"]:focus + span {
+  border-color: #c283f3;
+  color: #c283f3;
+}
+
+.form__filter-checkbox input[type="checkbox"]:hover + span::before,
+.form__filter-checkbox input[type="checkbox"]:hover + span {
+  border-color: #c283f3;
+  color: #fff;
+}
+
+.form__filter-checkbox input[type="checkbox"]:active + span::after {
+  background-color: #c283f3;
+}
+
+.form__filter-checkbox input[type="checkbox"]:active + span::before,
+.form__filter-checkbox input[type="checkbox"]:active + span::after,
+.form__filter-checkbox input[type="checkbox"]:active + span {
+  border-color: #c283f3;
+  color: #c283f3;
+}
+
 /* slides */
 .swiper-slide__image{
   height: 367px;
@@ -537,7 +560,7 @@ body {
   justify-content: center;
 }
 
-.gallery__swiper-btn:after, .gallery__swiper-btn:after {
+.gallery__button-prev:after, .gallery__button-next:after {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -549,11 +572,6 @@ body {
   color: #fff;
   background-color: #666;
 }
-
-/* .gallery__swiper-box:focus .swiper-button-prev::after {
-  color: #d11616;
-  background-color: aqua;
-} */
 
 .gallery__swiper-btn {
   right: auto;
@@ -1314,7 +1332,7 @@ text-align: center;
     justify-content: flex-start;
   }
 
-  .gallery__swiper-btn:after, .gallery__swiper-btn:after {
+  .gallery__button-prev:after, .gallery__button-next:after {
     width: 30px;
     height: 30px;
     padding: 0;
