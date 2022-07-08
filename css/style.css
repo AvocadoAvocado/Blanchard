@@ -945,6 +945,37 @@ body {
   line-height: 32px;
 }
 
+.accordion__link-artist {
+  position: relative;
+  display: inline-block;
+}
+
+.accordion__link-artist::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #9d5cd0;
+  opacity: 0;
+}
+
+.accordion__link-artist:focus {
+  outline: none;
+  background-color: #9d5cd0;
+}
+
+.accordion__link-artist:hover::before {
+  opacity: 1;
+}
+
+.accordion__link-artist:active {
+  color: #fff;
+  background-color: #9d5cd0;
+}
+
 .ac-link {
   font-weight: 600;
   font-size: 16px;
@@ -1191,6 +1222,21 @@ text-align: center;
   height: 30px;
   border-radius: 50%;
   background-color: #ececec;
+}
+
+.projects__swiper-btn:focus {
+  outline: none;
+  background-color: #d1a9f0;
+}
+
+.projects__swiper-btn:hover {
+  border: 2px solid #9d5cd0;
+  background-color: #ececec;
+}
+
+.projects__swiper-btn:active {
+  border: 2px solid #9d5cd0;
+  background-color: #d1a9f0;
 }
 
 .projects__slide-image{
@@ -2172,11 +2218,7 @@ text-align: center;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    color: #fff
-  }
-
-  .header__select-btn:focus {
-    outline: none;
+    color: #fff;
   }
 
   .header__select-btn::before {
@@ -2203,14 +2245,18 @@ text-align: center;
     top: 0;
     bottom: 0;
     outline: none;
-    background-color: #7943a4;
+    /* background-color: #7943a4; */
     opacity: 0;
+    cursor: pointer;
+  }
+
+  .header__select-btn:focus {
+    outline: none;
+    background-color: #f00;
   }
 
   .header__select-btn:focus::after {
-    cursor: pointer;
     opacity: 1;
-    background-color: #9d5cd0;
   }
 
   .header__select-btn:hover::after {
@@ -2218,9 +2264,9 @@ text-align: center;
   }
 
   .header__select-btn:active::after {
-    color: #7943a4;
+    background-color: transparent;
+    outline: 5px solid #f00;
   }
-
 
   .header__select-list {
     background: rgba(0, 0, 0, 0.5);
@@ -2261,9 +2307,35 @@ text-align: center;
   }
 
   .header__select-link {
-    padding: 12px 14px;
+    position: relative;
+    padding: 11px 14px;
     background-repeat: no-repeat;
     color: #fff;
+  }
+
+  .header__select-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: #c283f3;
+    opacity: 0;
+  }
+
+  .header__select-link:focus {
+    outline: none;
+    outline: 2px solid #9d5cd0;
+  }
+
+  .header__select-link:hover {
+    outline: 2px solid #9d5cd0;
+  }
+
+  .header__select-link:active {
+    opacity: .20;
   }
 
   .header__select-link--tintoretto {
