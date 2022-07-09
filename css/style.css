@@ -2143,6 +2143,10 @@ text-align: center;
     background-size: 22px 30px;
   }
 
+  .search:focus {
+    outline: none;
+  }
+
   .header__form-search {
     display: flex;
     align-items: center;
@@ -2150,10 +2154,25 @@ text-align: center;
 
   .header__search-input {
     padding-bottom: 5px;
+    margin-right: 0;
     border: none;
     border-bottom: 1px solid #fff;
     background-color: initial;
     color: #fff;
+  }
+
+  .header__search-input:focus {
+    outline: none;
+    border-color: #c283f3;
+  }
+
+  .header__search-input:hover {
+    cursor: pointer;
+    border-color: #c283f3;
+  }
+
+  .header__search-input:active {
+    border-color: #7943a4;
   }
 
   .header__search-input::placeholder {
@@ -2451,9 +2470,29 @@ text-align: center;
     background-color: #ececec;
   }
 
+  .card-preview__swiper-button-next:focus {
+    outline: none;
+    outline: 2px solid #9d5cd0;
+  }
+
+  .card-preview__swiper-button-next:hover {
+    cursor: pointer;
+    outline: none;
+    background-color: #d1a9f0;
+  }
+
+  .card-preview__swiper-button-next:active {
+    outline: 2px solid #9d5cd0;
+    background-color: #d1a9f0;
+  }
+
   .card-preview__swiper-button-next::after {
     font-size: 20px;
     color: #000;
+  }
+
+  .card-preview__swiper-button-prev:focus {
+    outline: none;
   }
 
   .card-preview__pagination {
