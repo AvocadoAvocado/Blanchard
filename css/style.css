@@ -2219,6 +2219,7 @@ text-align: center;
     font-size: 18px;
     line-height: 25px;
     color: #fff;
+    transition: outline 1s, bacrground-color 1s;
   }
 
   .header__select-btn::before {
@@ -2237,35 +2238,29 @@ text-align: center;
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 6L6 0.999998L1 6' stroke='white'/%3E%3C/svg%3E ");
   }
 
-  .header__select-btn::after {
-    content: "";
-    position: absolute;
-    left: -2px;
-    right: -2px;
-    top: 0;
-    bottom: 0;
-    outline: none;
-    /* background-color: #7943a4; */
-    opacity: 0;
-    cursor: pointer;
-  }
-
   .header__select-btn:focus {
     outline: none;
-    background-color: #f00;
+    outline: 4px solid #7943a4;
+    cursor: pointer;
+    background-color: #7943a4;
   }
 
-  .header__select-btn:focus::after {
-    opacity: 1;
-  }
-
-  .header__select-btn:hover::after {
+  .header__select-btn:hover {
     color: #9d5cd0;
   }
 
-  .header__select-btn:active::after {
+  .header__select-btn:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 6.00001L0.999997 1' stroke='%239D5CD0'/%3E%3C/svg%3E%0A");
+  }
+
+  .header__select-btn:active {
+    outline: none;
+    color: #7943a4;
     background-color: transparent;
-    outline: 5px solid #f00;
+  }
+
+  .header__select-btn:active::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.999997 6L6 0.999995L11 6' stroke='%237943A4'/%3E%3C/svg%3E ");
   }
 
   .header__select-list {
@@ -2308,21 +2303,27 @@ text-align: center;
 
   .header__select-link {
     position: relative;
+    width: 218px;
+    height: 40px;
     padding: 11px 14px;
     background-repeat: no-repeat;
     color: #fff;
   }
 
-  .header__select-link::after {
+  .header__select-link::before {
     content: "";
+    display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
     cursor: pointer;
-    background-color: #c283f3;
+    z-index: 0;
+    outline: 2px solid #9d5cd0;
     opacity: 0;
+    transition: opacity 1s;
   }
 
   .header__select-link:focus {
@@ -2334,8 +2335,8 @@ text-align: center;
     outline: 2px solid #9d5cd0;
   }
 
-  .header__select-link:active {
-    opacity: .20;
+  .header__select-link:active::before  {
+    opacity: 1;
   }
 
   .header__select-link--tintoretto {
