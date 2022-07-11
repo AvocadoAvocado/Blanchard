@@ -201,3 +201,16 @@ buttonSearchClose.addEventListener('click', function (){
   wrapperSearch.classList.remove('header__header-search--position');
   formSearch.classList.add('header__header-form--invis');
 });
+
+// loupe
+let buttonLoupe = document.querySelector('.loupe');
+let galleryModal = document.querySelector('.gallery__modal');
+let buttonModalClose = document.querySelector('.gallery__modal-close')
+
+buttonLoupe.addEventListener('click', ()=> {
+  galleryModal.classList.add('gallery__modal');
+})
+
+buttonModalClose.addEventListener('click', function (){
+  galleryModal.classList.add('gallery__modal--invis');
+});
