@@ -1588,6 +1588,7 @@ text-align: center;
   overflow-y: auto;
   color: #333;
   background-color: #fff;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
 }
 
 .gallery__modal-close {
@@ -1602,7 +1603,9 @@ text-align: center;
 .gallery__modal-close::after {
   width: 21px;
   height: 1px;
-  background-color: #000000;
+  left: -2px;
+  right: 0;
+  background-color: #000;
 }
 
 .gallery__modal-close::before {
@@ -1615,6 +1618,22 @@ text-align: center;
   content: "";
   position: absolute;
   transform: rotate(-45deg);
+}
+
+.gallery__modal-close:focus::before,
+.gallery__modal-close:focus::after {
+  cursor: pointer;
+  background-color: #9d5cd0;
+}
+
+.gallery__modal-close:hover::before,
+.gallery__modal-close:hover::after {
+  background-color: #9d5cd0;
+}
+
+.gallery__modal-close:active::before,
+.gallery__modal-close:active::after {
+  background-color: #7943a4;
 }
 
 .gallery__modal-img img {
@@ -1907,6 +1926,35 @@ text-align: center;
     height: 85%;
   }
 
+  .gallery__modal-wraper {
+    display: flex;
+    min-height: 594px;
+    margin: auto 50px;
+    overflow: hidden;
+  }
+
+  .gallery__modal-img {
+    min-width: 301px;
+  }
+
+  .gallery__modal-img img {
+    max-height: none;
+    height: 100%;
+  }
+
+  .gallery__modal-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 36px;
+    padding-left: 50px;
+  }
+
+  .gallery__modal-close {
+    top: 26px;
+    right: 26px;
+  }
+
   /* catalog */
   .catalog__descr {
     display: block;
@@ -2111,6 +2159,18 @@ text-align: center;
     height: 100%;
   }
 
+  .gallery__modal-wraper {
+    margin: auto 215px;
+  }
+
+  .gallery__modal-inner {
+    padding-right: 50px;
+  }
+
+  .gallery__modal-img {
+    min-width: 264px;
+  }
+
   .form__input {
     max-width: 95%;
   }
@@ -2133,11 +2193,6 @@ text-align: center;
   .form__filter-checkbox .form__filter-period--margin {
     margin-bottom: 0;
   }
-
-  /* .swiper-slide__image {
-    width: 280px;
-    height: 315px;
-  } */
 
   .form__filter-part {
     height: 100%;
@@ -2615,6 +2670,15 @@ text-align: center;
   .gallery__button-next {
     justify-content: flex-end;
   }
+
+  .gallery__modal-wraper {
+    min-height: 500px;
+    margin: auto 510px;
+  }
+
+  .gallery__modal-img {
+    min-width: 400px;
+}
 
   .social__link svg {
     width: 45px;
