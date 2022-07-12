@@ -91,48 +91,6 @@ var buttonSwiper = new Swiper(".projects__swiper", {
 });
 
 // burger
-// let burger = document.querySelector('.burger');
-// let menu = document.querySelector('.header__nav');
-// let menuLinks = menu.querySelectorAll('.nav__link');
-// let close = document.querySelector('.nav__close');
-
-// burger.addEventListener('click',
-
-//   function () {
-
-//     burger.classList.toggle('header__burger--active');
-
-//     menu.classList.toggle('header__nav--active');
-
-//     document.body.classList.toggle('stop-scroll');
-//   })
-
-// menuLinks.forEach(function (el) {
-//   el.addEventListener('click', function () {
-
-//     burger.classList.remove('header__burger--active');
-
-//     menu.classList.remove('header__nav--active');
-
-//     document.body.classList.remove('stop-scroll')
-//   })
-// })
-
-// close.addEventListener('click',
-//   function () {
-
-//     burger.classList.toggle('header__burger--active');
-
-//     menu.classList.toggle('header__nav--active');
-
-//     document.body.classList.toggle('stop-scroll');
-//   })
-
-//menu-burger - show - header-menu
-//menu-close - hide - header-menu
-//select-btn - toggle - select-list
-
-// burger
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".header__header-menu");
 const menuClose = document.querySelector(".header__menu-close");
@@ -203,12 +161,15 @@ buttonSearchClose.addEventListener('click', function (){
 });
 
 // loupe
-let buttonLoupe = document.querySelector('.loupe');
+let btnLoupe = document.querySelectorAll('.gallery__swiper-btn-img');
 let galleryModal = document.querySelector('.gallery__modal');
 let buttonModalClose = document.querySelector('.gallery__modal-close')
 
-buttonLoupe.addEventListener('click', ()=> {
-  galleryModal.classList.add('gallery__modal');
+
+btnLoupe.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    galleryModal.classList.remove('gallery__modal--invis');
+  })
 })
 
 buttonModalClose.addEventListener('click', function (){
