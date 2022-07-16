@@ -2263,22 +2263,6 @@ text-align: center;
     border-radius: initial;
   }
 
-  /* .header__menu-link::after {
-    content: "";
-    position: absolute;
-    left: -2px;
-    right: -2px;
-    top: 2;
-    bottom: 2;
-    outline: none;
-    background-color: #7943a4;
-    opacity: 0;
-  }
-
-  .header__menu-link:focus::after {
-    opacity: 1;
-  } */
-
   .header__menu-login {
     display: flex;
     align-items: center;
@@ -2325,20 +2309,6 @@ text-align: center;
     background-color: initial;
     color: #fff;
   }
-
-  /* .header__search-input:focus {
-    outline: none;
-    border-color: #c283f3;
-  }
-
-  .header__search-input:hover {
-    cursor: pointer;
-    border-color: #c283f3;
-  }
-
-  .header__search-input:active {
-    border-color: #7943a4;
-  } */
 
   .header__search-input::placeholder {
     color: #fff;
