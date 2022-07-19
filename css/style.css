@@ -225,6 +225,7 @@ body {
 .header__search-input:hover {
   cursor: pointer;
   border-color: #c283f3;
+  transition: border-color .3s ease-in-out;
 }
 
 .header__search-input:active {
@@ -616,6 +617,7 @@ body {
 .choices:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.2);
+  transition: background .3s ease-in-out;
 }
 
 .choices__list--dropdown {
@@ -657,6 +659,7 @@ body {
 .choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.2);
+  transition: background .3s ease-in-out;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
@@ -727,7 +730,7 @@ body {
 .form__filter-checkbox input[type="checkbox"]:hover + span::before,
 .form__filter-checkbox input[type="checkbox"]:hover + span {
   border-color: #c283f3;
-  color: #fff;
+  transition: border-color .3s ease-in-out;
 }
 
 .form__filter-checkbox input[type="checkbox"]:active + span::after {
@@ -739,6 +742,7 @@ body {
 .form__filter-checkbox input[type="checkbox"]:active + span {
   border-color: #c283f3;
   color: #c283f3;
+  transition: border-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 /* slides */
@@ -788,6 +792,7 @@ body {
 
 .gallery__container-bg:hover {
   opacity: 1;
+  transition: opacity .5s ease-in-out;
 }
 
 .gallery__swiper-link-img::before {
@@ -1280,9 +1285,21 @@ body {
 }
 
 .projects__link {
+  position: relative;
   display: inline-block;
   padding: 0 5px;
   color: #9d5cd0;
+}
+
+.projects__link::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  border-bottom: 1px solid #9d5cd0;
+  color: #9d5cd0;
+  opacity: 0;
 }
 
 .projects__link:focus {
@@ -1291,10 +1308,8 @@ body {
   background-color: #9d5cd0;
 }
 
-.projects__link:hover {
-  cursor: pointer;
-  border-bottom: 1px solid #9d5cd0;
-  color: #9d5cd0;
+.projects__link:hover::before {
+  opacity: 1;
 }
 
 .projects__link:active {
@@ -1357,7 +1372,9 @@ text-align: center;
 
 .projects__swiper-btn:hover {
   border: 2px solid #9d5cd0;
+  color: transparent;
   background-color: #ececec;
+  transition: border .3s ease-in-out;
 }
 
 .projects__swiper-btn:active {
@@ -1412,6 +1429,7 @@ text-align: center;
 
 .form__input:hover {
   background-color: #ececec;
+  transition: background-color .3s ease-in-out;
 }
 
 .form__span--status-invalid {
@@ -1496,7 +1514,6 @@ text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .messengers__link:focus {
@@ -1507,6 +1524,7 @@ text-align: center;
 .messengers__link:hover {
   opacity: .3;
   cursor: pointer;
+  transition: opacity .3s ease-in-out;
 }
 
 .messengers__link:active {
@@ -1515,6 +1533,7 @@ text-align: center;
   outline: 1px solid #9d5cd0;
   outline-offset: -1px;
   border-radius: 50%;
+  transition: outline .3s ease-in-out;
 }
 
 .messengers__link--whatsapp {
@@ -1583,6 +1602,7 @@ text-align: center;
 
 .social__link:hover svg {
   fill: #fff;
+
 }
 
 .social__link:active svg {
@@ -2392,7 +2412,6 @@ text-align: center;
     font-size: 18px;
     line-height: 25px;
     color: #fff;
-    transition: outline 1s, bacrground-color 1s;
   }
 
   .header__select-btn::before {
@@ -2416,10 +2435,13 @@ text-align: center;
     outline: 4px solid #7943a4;
     cursor: pointer;
     background-color: #7943a4;
+    color: #fff;
+    transition: outline .3s ease-in-out, background-color .3s ease-in-out;
   }
 
   .header__select-btn:hover {
     color: #9d5cd0;
+    transition: color .3s ease-in-out;
   }
 
   .header__select-btn:hover::before {
@@ -2430,6 +2452,7 @@ text-align: center;
     outline: none;
     color: #7943a4;
     background-color: transparent;
+    transition: background-color .5s ease-in-out;
   }
 
   .header__select-btn:active::before {
