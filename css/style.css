@@ -61,7 +61,7 @@ a {
   display: block;
   text-decoration: none;
   color: inherit;
-  transition: background-color .5s ease;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 img {
@@ -96,7 +96,7 @@ body {
   font-weight: 700;
   color: var(--color-primary-text);
   background-color: var(--color-primary-controls);
-  transition: background-color .5s ease;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .visually-hidden {
@@ -311,12 +311,14 @@ body {
   content: "";
   position: absolute;
   transform: rotate(45deg);
+  transition: background-color .3s ease-in-out;
 }
 
 .header__menu-close::after {
   content: "";
   position: absolute;
   transform: rotate(-45deg);
+  transition: background-color .3s ease-in-out;
 }
 
 .header__menu-close {
@@ -374,6 +376,10 @@ body {
   color: #7943a4;
 }
 
+.header__menu-link:active::before {
+  background-color: transparent;
+}
+
 .header__menu-login {
   padding: 11px 31px;
   border-radius: 100px;
@@ -388,23 +394,32 @@ body {
   fill: #fff;
 }
 
-.header__menu-login:focus{
+.header__menu-login:focus {
   outline: none;
   border-color: #7943a4;
   background-color: #7943a4;
 }
 
-.header__menu-login:hover,
-.header__menu-login:hover svg path {
+.header__menu-login:hover {
   color: #c283f3;
-  fill: #c283f3;
+  transition:  color .3s ease-in-out;
 }
 
-.header__menu-login:active,
-.header__menu-login:active svg path {
+.header__menu-login:hover svg path {
+  fill: #c283f3;
+  transition:  fill .3s ease-in-out;
+}
+
+.header__menu-login:active {
   border-color: #9d5cd0;
   color: #9d5cd0;
+  background-color: transparent;
+  transition:  color .3s ease-in-out, border .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.header__menu-login:active svg path {
   fill: #9d5cd0;
+  transition:  fill .3s ease-in-out;
 }
 
 .header__menu-item:not(:last-child) {
@@ -480,6 +495,9 @@ body {
   line-height: 16px;
   text-align: center;
   background-color: #9d5cd0;
+  outline-offset: 3px;
+  outline: 2px solid #c283f300;
+  transition: outline .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .hero__btn:focus {
@@ -491,6 +509,7 @@ body {
 .hero__btn:hover {
   outline-offset: 3px;
   outline: 2px solid #c283f3;
+  transition: outline .3s ease-in-out;
 }
 
 .hero__btn:active {
@@ -918,12 +937,12 @@ body {
 
 .catalog__subtitle {
   display: flex;
-  transition: color .5s;
+  transition: color .3s;
 }
 
 .accordion--active .accordion__control svg {
   transform: rotate(180deg);
-  transition: transform .5s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 
 .catalog__item {
@@ -932,7 +951,7 @@ body {
   padding: 20px 0;
   border-top: 1px solid transparent;
   border-bottom: 1px solid #cacaca;
-  transition: border-color .5s;
+  transition: border-color .3s;
 }
 
 .catalog__item:first-child {
@@ -977,7 +996,7 @@ body {
 
 .catalog__item svg circle,
 .catalog__item svg path {
-  transition: fill .5s;
+  transition: fill .3s;
 }
 
 .accordion__icon:focus {
@@ -1348,7 +1367,7 @@ text-align: center;
 
 .projects__slide-image{
   filter: grayscale(1);
-  transition: .5s;
+  transition: .3s;
 }
 
 .projects__slide-image:hover {
