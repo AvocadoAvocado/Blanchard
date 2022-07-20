@@ -1435,6 +1435,7 @@ text-align: center;
 .contacts__form {
   align-items: flex-end;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 }
 
@@ -1475,6 +1476,18 @@ text-align: center;
   padding: 0;
 }
 
+.form__col-container--field-top {
+  margin-top: 13px;
+}
+
+.form__col-container--field-bottom {
+  margin-top: 20px;
+}
+
+.form__col-container--field-btn {
+  margin-top: 20px;
+}
+
 .contacts__btn {
   width: 100%;
   padding: 10px 0;
@@ -1513,7 +1526,7 @@ text-align: center;
 }
 
 .messengers__text {
-  margin-bottom: 11px;
+  margin-bottom: 8px;
   font-size: 18px;
   line-height: 32px;
 }
@@ -1533,8 +1546,8 @@ text-align: center;
 
 .messengers__link {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 49px;
+  height: 49px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1574,7 +1587,7 @@ text-align: center;
 
 .map {
   width: 100%;
-  height: 320px
+  height: 315px
 }
 
 [class*="copyrights-pane"] {
@@ -1600,11 +1613,11 @@ text-align: center;
 .social {
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .social__item {
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 .social__item:last-child {
