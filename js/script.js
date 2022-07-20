@@ -39,6 +39,7 @@ let mySwiper = new Swiper('.hero__swiper', {
 let mySlider = new Swiper('.card-preview__swiper', {
   slidesPerView: 1,
   slidesPerGroup: 1,
+  autoHeight: true,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
