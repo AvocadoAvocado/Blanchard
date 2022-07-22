@@ -2012,7 +2012,33 @@ text-align: center;
 
   /* .gallery */
   .gallery {
+    padding-bottom: 61px;
     background-image: url(../img/bg-gallery-sm.jpg);
+  }
+
+  .form__filter-part {
+    margin-bottom: 0;
+  }
+
+  .form__filter-legend {
+    margin-bottom: 8px;
+  }
+
+  .form__select-gallery {
+    margin-bottom: 48px;
+  }
+
+  .gallery__container-bootstrap {
+    padding: 0;
+    margin-bottom: 29px;
+  }
+
+  .gallery__swiper-pagination {
+    margin: auto 17px;
+  }
+
+  .gallery__button-prev {
+    justify-content: flex-start;
   }
 
   .swiper-slide__image {
@@ -2021,7 +2047,7 @@ text-align: center;
   }
 
   .gallery__swiper-box {
-    min-width: 21%;
+    min-width: 20%;
   }
 
   .gallery__swiper-slide::before {
