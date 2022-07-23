@@ -2087,10 +2087,12 @@ text-align: center;
   /* catalog */
   .catalog__descr {
     display: block;
+    padding-bottom: 6px;
   }
 
-  .catalog__descr {
-    padding-bottom: 30px;
+  .accordion__control svg {
+    width: 50px;
+    height: 50px;
   }
 
   .accordion__box-list {
@@ -2102,6 +2104,8 @@ text-align: center;
     display: flex;
     padding-left: 0;
     padding-right: 0;
+    margin-top: 31px;
+    padding-top: 26px;
   }
 
   .accordion__pic-wrapper {
@@ -2117,12 +2121,25 @@ text-align: center;
     align-items: center;
   }
 
+  .accordion__heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .accordion-list {
+    margin-bottom: 56px;
+  }
+
   .ac-caption {
     font-size: 24px;
   }
 
   .ac-descr {
     line-height: 22px;
+  }
+
+  .catalog__item {
+    padding: 31px 0;
   }
 
   .card-preview__box {
@@ -2133,6 +2150,43 @@ text-align: center;
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
+  }
+
+  .card-artist__lifespan {
+    margin-bottom: 6px;
+  }
+
+  .card-preview__articles img {
+    max-height: 200px;
+  }
+
+  .card-preview__container-content {
+    padding: 0 17px 46px 32px;
+    padding-top: 14px;
+  }
+
+  .card-preview__location {
+    margin-bottom: 3px;
+  }
+
+  .card-preview__location--sm {
+    max-width: 104px;
+  }
+
+  .card-preview__swiper-wrapper {
+    margin-bottom: 24px;
+  }
+
+  .projects {
+    padding-top: 76px;
+  }
+
+  .projects__title-partners {
+    font-size: 24px;
+  }
+
+  .projects__desct {
+    margin-bottom: 28px;
   }
 
   .contacts__form {

@@ -59,7 +59,7 @@ let mySlider = new Swiper('.card-preview__swiper', {
     768: {
       slidesPerGroup: 2,
       slidesPerView: 2,
-      spaceBetween: 34,
+      spaceBetween: 35,
     },
     1024: {
       slidesPerGroup: 3,
