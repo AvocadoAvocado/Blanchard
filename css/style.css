@@ -1346,9 +1346,13 @@ body {
   line-height: 32px;
 }
 
-.projects__swiper {
+/* .projects__swiper {
   margin: 0 48px;
   height: 100%;
+}
+
+.projects__swiper-wrapper {
+  align-items: center;
 }
 
 .projects__swiper-content {
@@ -1362,7 +1366,7 @@ body {
 }
 
 .projects__swiper-slide {
-text-align: center;
+  text-align: center;
 }
 
 .projects__swiper-button-next {
@@ -1404,13 +1408,124 @@ text-align: center;
   background-color: #d1a9f0;
 }
 
-.projects__slide-image{
+.projects__slide-image {
   filter: grayscale(1);
   transition: .3s;
 }
 
 .projects__slide-image:hover {
   filter: grayscale(0);
+} */
+
+.projects__swiper-content {
+  position: relative;
+}
+
+.projects__swiper {
+  display: flex;
+  align-items: center;
+  height: 79px;
+  margin: 0 38px;
+}
+
+.projects__swiper-wrapper {
+  position: relative;
+}
+
+.projects__swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+}
+
+.projects__slide-image {
+  filter: grayscale(1);
+  transition: .3s;
+}
+
+.projects__slide-image:hover {
+  filter: grayscale(0);
+}
+
+.projects__swiper-slide-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects__swiper-slide-image::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 195px;
+  height: 65px;
+  outline: 1px solid #cacaca;
+}
+
+.projects__swiper-slide-image:focus {
+  outline: none;
+}
+
+.projects__swiper-slide-image:focus:before {
+  cursor: pointer;
+}
+
+.projects__swiper-slide-image:hover:before {
+  outline: 1px solid #9d5cd0;
+  transition: outline .3s ease-in-out;
+}
+
+.projects__swiper-slide-image:active:before {
+  outline: 1px solid #9d5cd0;
+  transition: outline .3s ease-in-out;
+}
+
+.projects__swiper-slide img {
+  display: block;
+  max-width: 123px;
+  max-height: 36px;
+  object-fit: cover;
+}
+
+.projects__swiper-button-next {
+  right: 0;
+}
+
+.projects__swiper-button-prev {
+  left: 0;
+}
+
+.projects__swiper-btn {
+  top: 58%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ececec;
+}
+
+.projects__swiper-button-next::after,
+.projects__swiper-button-prev::after {
+  font-size: 16px;
+  color: #000;
+}
+
+.projects__swiper-btn:focus {
+  outline: none;
+  background-color: #d1a9f0;
+}
+
+.projects__swiper-btn:hover {
+  border: 2px solid #9d5cd0;
+  color: transparent;
+  background-color: #ececec;
+  transition: border .3s ease-in-out;
+}
+
+.projects__swiper-btn:active {
+  border: 2px solid #9d5cd0;
+  background-color: #d1a9f0;
 }
 
 /* contacts */
@@ -2143,7 +2258,7 @@ text-align: center;
   }
 
   .card-preview__box {
-    min-height: 389px;
+    min-height: 388px;
   }
 
   .card-preview__title {
@@ -2195,6 +2310,20 @@ text-align: center;
 
   .projects__link {
     display: inline-block;
+  }
+
+  .projects__swiper {
+    height: 120px;
+  }
+
+  .projects__swiper-slide img {
+    max-width: 216px;
+    max-height: 72px;
+  }
+
+  .projects__swiper-slide-image::before {
+    width: 264px;
+    height: 106px;
   }
 
   .form__posicion-container {
@@ -2354,6 +2483,20 @@ text-align: center;
     min-width: 264px;
   }
 
+  .projects__swiper {
+    height: 138px;
+  }
+
+  .projects__swiper-slide img {
+    max-width: 283px;
+    max-height: 73px;
+  }
+
+  .projects__swiper-slide-image::before {
+    width: 384px;
+    height: 128px;
+  }
+
   .form__input {
     max-width: 95%;
   }
@@ -2395,6 +2538,16 @@ text-align: center;
   .accordion__pic {
     min-width: 251px;
     min-height: 165px;
+  }
+
+  .projects__swiper-slide img {
+    max-width: 214px;
+    max-height: 85px;
+  }
+
+  .projects__swiper-slide-image::before {
+    width: 295px;
+    height: 110px;
   }
 
   .contacts__messengers {
@@ -2834,10 +2987,26 @@ text-align: center;
 
   .gallery__modal-img {
     min-width: 400px;
-}
+  }
+
+  .projects__swiper {
+    height: 138px;
+  }
 
   .social__link svg {
     width: 45px;
     height: 45px;
+  }
+}
+
+@media(min-width: 1650px) {
+  .projects__swiper-slide img {
+    max-width: 330px;
+    max-height: 85px;
+  }
+
+  .projects__swiper-slide-image::before {
+    width: 384px;
+    height: 128px;
   }
 }
