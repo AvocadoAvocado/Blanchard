@@ -2435,6 +2435,10 @@ body {
     flex-direction: row;
   }
 
+  .catalog {
+    padding-bottom: 21px;
+  }
+
   .catalog__descr {
     margin-bottom: 39px;
     padding-bottom: 0;
@@ -2447,6 +2451,10 @@ body {
   .catalog__artist {
     padding-left: 13px;
     padding-right: 24px;
+  }
+
+  .catalog__item {
+    padding: 32px 0;
   }
 
   .accordion-list {
@@ -2531,7 +2539,16 @@ body {
   }
 
   .accordion__name-box {
+    max-height: 408px;
     margin-top: 35px;
+  }
+
+  .card-preview__container-content {
+    padding: 14px 32px 46px 32px;
+  }
+
+  .card-preview__box {
+    max-height: 387px;
   }
 
   .projects__swiper {
