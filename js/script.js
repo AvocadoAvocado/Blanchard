@@ -169,7 +169,7 @@ buttonSearchClose.addEventListener('click', function (){
   formSearch.classList.add('header__container-form--invis');
 });
 
-// loupe
+// modal
 let btnLoupe = document.querySelectorAll('.gallery__container-bg');
 let galleryModal = document.querySelector('.gallery__modal');
 let buttonModalClose = document.querySelector('.gallery__modal-close')
