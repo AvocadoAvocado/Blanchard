@@ -176,7 +176,8 @@ let buttonModalClose = document.querySelector('.gallery__modal-close')
 
 
 btnLoupe.forEach(function (btn) {
-  btn.addEventListener('click', function () {
+  btn.addEventListener('click', function (event) {
+    event.preventDefault();
     galleryModal.classList.remove('gallery__modal--invis');
   })
 })
