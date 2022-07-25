@@ -2435,8 +2435,22 @@ body {
     flex-direction: row;
   }
 
+  .catalog__descr {
+    margin-bottom: 39px;
+    padding-bottom: 0;
+  }
+
   .catalog__content-dates {
     flex-direction: row-reverse;
+  }
+
+  .catalog__artist {
+    padding-left: 13px;
+    padding-right: 24px;
+  }
+
+  .accordion-list {
+    padding-left: 26px;
   }
 
   .accordion__list-artist {
@@ -2453,8 +2467,43 @@ body {
     min-height: 114px;
   }
 
+  .gallery {
+    padding-bottom: 80px;
+  }
+
+  .gallery__title {
+    display: inline-block;
+  }
+
   .gallery__container-bootstrap {
-    margin-right: 50px;
+    max-width: 282px;
+    margin-right: 49px;
+    margin-bottom: 0;
+  }
+
+  .gallery__swiper-box {
+    min-width: 22%;
+  }
+
+  .gallery__button-next {
+    justify-content: flex-end;
+  }
+
+  .gallery__swiper-pagination {
+    margin: auto 9px;
+  }
+
+  .gallery__swiper {
+    margin-top: 22px;
+  }
+
+  .swiper-slide__image {
+    width: 281px;
+    height: 314px;
+  }
+
+  .gallery__swiper-wrapper {
+    margin-bottom: 0;
   }
 
   .gallery__form {
@@ -2471,6 +2520,18 @@ body {
 
   .gallery__modal-img {
     min-width: 264px;
+  }
+
+  .card-artist__conteiner-content {
+    margin-top: 31px;
+  }
+
+  .card-artist__lifespan {
+    margin-bottom: 16px;
+  }
+
+  .accordion__name-box {
+    margin-top: 35px;
   }
 
   .projects__swiper {
@@ -2497,13 +2558,13 @@ body {
 
   .form__container-position {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
     height: 100%;
   }
 
   .form__select-gallery {
-    margin-bottom: 30px;
+    margin-bottom: 112px;
   }
 
   .form__filter-checkbox .form__filter-period--margin {
