@@ -1971,6 +1971,7 @@ body {
   }
 
   .header {
+    min-height: 99px;
     padding-top: 29px;
     padding-bottom: 29px;
   }
@@ -2551,8 +2552,24 @@ body {
     max-height: 387px;
   }
 
+  .projects__title {
+    margin-bottom: 19px;
+  }
+
+  .projects__desct {
+    margin-bottom: 19px;
+  }
+
+  .projects__title-partners {
+    margin-bottom: 19px;
+  }
+
   .projects__swiper {
     height: 138px;
+  }
+
+  .projects__swiper-btn {
+    top: 55%;
   }
 
   .projects__swiper-slide img {
@@ -2563,6 +2580,14 @@ body {
   .projects__swiper-slide-image::before {
     width: 384px;
     height: 128px;
+  }
+
+  .contacts__form-field {
+    min-width: 289px;
+  }
+
+  .form__col-container--field-btn {
+    min-width: 344px;
   }
 
   .form__input {
@@ -2590,6 +2615,10 @@ body {
 
   .form__filter-part {
     height: 100%;
+  }
+
+  .messengers__text {
+    margin-bottom: 5px;
   }
 }
 
@@ -2640,6 +2669,7 @@ body {
   }
 
   .header {
+    max-height: 102px;
     position: relative;
     display: flex;
     align-items: center;
@@ -2659,9 +2689,16 @@ body {
     flex-wrap: nowrap;
     padding: 0;
     border: none;
+    font-size: 17px;
+  }
+
+  .header__menu-login svg {
+    width: 13px;
+    height: 13px;
   }
 
   .header__logo {
+    max-width: 173px;
     position: relative;
     top: 0;
     left: 0;
@@ -2687,6 +2724,7 @@ body {
   }
 
   .header__form-search {
+    min-width: 252px;
     display: flex;
     align-items: center;
   }
@@ -2698,6 +2736,7 @@ body {
     border-bottom: 1px solid #fff;
     background-color: initial;
     color: #fff;
+    font-size: 18px;
   }
 
   .header__search-input::placeholder {
@@ -2705,7 +2744,11 @@ body {
   }
 
   .header__main {
-    padding-right: 119px;
+    padding-right: 181px;
+  }
+
+  .header__menu-link {
+    font-size: 18px;
   }
 
   .header__menu {
@@ -2720,7 +2763,7 @@ body {
   }
 
   .header__menu-item:not(:last-child) {
-    padding-right: 62px;
+    padding-right: 65px;
     margin-bottom: 0;
   }
 
@@ -2750,6 +2793,7 @@ body {
   }
 
   .header__header-selects {
+    max-width: 1158px;
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -2971,7 +3015,62 @@ body {
   }
 
   .hero__swiper {
-    height: 679px;
+    height: 696px;
+  }
+
+  .hero__content {
+    min-height: 708px;
+    padding: 133px 0;
+  }
+
+  .hero__title {
+    margin-bottom: 59px;
+  }
+
+  .catalog__artist {
+    padding-right: 48px;
+  }
+
+  .catalog__item {
+    padding: 31px 0;
+  }
+
+  .accordion-list {
+    padding-left: 2px;
+  }
+
+  .accordion__link-artist--lg {
+    min-width: 145px;
+  }
+
+  .catalog {
+    padding-bottom: 28px;
+  }
+
+  .card-preview__container-content {
+    padding: 18px 61px 44px 51px;
+  }
+
+  .card-preview__title {
+    margin-bottom: 11px;
+  }
+
+  .card-preview__title--lg {
+    max-width: 265px;
+  }
+
+  .card-preview__location {
+    margin-bottom: 7px;
+    margin-left: initial;
+    text-align: left;
+  }
+
+  .card-preview__box {
+    min-height: 310px;
+  }
+
+  .card-preview__articles img {
+    max-height: 301px;
   }
 
   .card-preview__swiper-content {
@@ -3032,8 +3131,12 @@ body {
     height: 350px;
   }
 
+  .gallery-pagination__container {
+    margin-left: 9px;
+  }
+
   .gallery__swiper-box {
-    min-width: 16%;
+    min-width: 11%;
   }
 
   .gallery__button-prev {
@@ -3057,24 +3160,43 @@ body {
     min-width: 400px;
   }
 
+  .projects {
+    padding-top: 49px;
+  }
+
+  .projects__desct {
+    margin-bottom: 17px;
+  }
+
   .projects__swiper {
-    height: 138px;
+    height: 146px;
   }
 
-  .social__link svg {
-    width: 45px;
-    height: 45px;
+  .gallery__container-bootstrap {
+    max-width: 401px;
+    margin-right: 43px;
   }
-}
 
-@media(min-width: 1650px) {
+  .projects__swiper {
+    margin: 0 67px;
+  }
+
+  .projects__swiper-btn {
+    top: 59%;
+  }
+
   .projects__swiper-slide img {
     max-width: 330px;
     max-height: 85px;
   }
 
   .projects__swiper-slide-image::before {
-    width: 384px;
-    height: 128px;
+    width: 454px;
+    height: 143px;
+  }
+
+  .social__link svg {
+    width: 45px;
+    height: 45px;
   }
 }
