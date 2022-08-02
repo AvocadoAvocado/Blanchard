@@ -3160,6 +3160,11 @@ body {
     min-width: 400px;
   }
 
+  .form__container-position {
+    max-height: 308px;
+    justify-content: space-between;
+  }
+
   .projects {
     padding-top: 49px;
   }
@@ -3185,6 +3190,27 @@ body {
     top: 59%;
   }
 
+  .projects__swiper-slide img {
+    max-width: 189px;
+    max-height: 58px;
+  }
+
+  .projects__swiper-slide-image::before {
+    width: 235px;
+    height: 82px;
+  }
+
+  .map {
+    height: 687px;
+  }
+
+  .social__link svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media(min-width: 1650px) {
   .projects__swiper-slide img {
     max-width: 330px;
     max-height: 85px;
