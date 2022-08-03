@@ -2087,9 +2087,9 @@ body {
     margin: auto 17px;
   }
 
-  .gallery__button-prev {
+  /* .gallery__button-prev {
     justify-content: flex-start;
-  }
+  } */
 
   .swiper-slide__image {
     width: 315px;
@@ -2307,6 +2307,8 @@ body {
 
   .contacts__btn-sm {
     display: block;
+    padding-right: 15px;
+    padding-left: 15px;
     font-size: 18px;
     line-height: 25px;
   }
@@ -2427,6 +2429,7 @@ body {
   }
 
   .hero__title {
+    max-height: 126px;
     margin-bottom: 10px;
     line-height: 97px;
   }
@@ -2491,12 +2494,12 @@ body {
   }
 
   .gallery__swiper-box {
-    min-width: 22%;
+    min-width: 13%;
   }
 
-  .gallery__button-next {
+  /* .gallery__button-next {
     justify-content: flex-end;
-  }
+  } */
 
   .gallery__swiper-pagination {
     margin: auto 9px;
@@ -2877,6 +2880,10 @@ body {
     justify-content: space-between;
   }
 
+  .form__col-container--field-btn {
+    min-width: 285px;
+  }
+
   .projects {
     padding-top: 49px;
   }
@@ -2922,7 +2929,7 @@ body {
   }
 }
 
-@media(min-width: 1650px) {
+@media(min-width: 1680px) {
   .header {
     max-height: 102px;
     position: relative;
@@ -2965,6 +2972,10 @@ body {
     overflow: hidden;
     background: initial;
     padding: 0;
+  }
+
+  .header__search-input {
+    margin-right: 0;
   }
 
   .header__menu-item:not(:last-child) {
@@ -3231,6 +3242,13 @@ body {
     min-width: 11%;
   }
 
+  .social__link svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media(min-width: 1920px) {
   .projects__swiper-slide img {
     max-width: 330px;
     max-height: 85px;
@@ -3239,10 +3257,5 @@ body {
   .projects__swiper-slide-image::before {
     width: 454px;
     height: 143px;
-  }
-
-  .social__link svg {
-    width: 45px;
-    height: 45px;
   }
 }
