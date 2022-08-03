@@ -6,8 +6,8 @@ let swiper = new Swiper('.gallery__swiper', {
   slidesPerGroup: 1,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.gallery__button-next',
+    prevEl: '.gallery__button-prev',
   },
   pagination: {
     el: '.swiper-pagination',
@@ -42,8 +42,8 @@ let mySlider = new Swiper('.card-preview__swiper', {
   autoHeight: true,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.card-preview__swiper-button-next',
+    prevEl: '.card-preview__swiper-button-prev',
   },
   pagination: {
     el: '.card-preview__pagination',
@@ -74,8 +74,8 @@ var buttonSwiper = new Swiper(".projects__swiper", {
   slidesPerGroup: 1,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.projects__swiper-button-next',
+    prevEl: '.projects__swiper-button-prev',
   },
 
   breakpoints: {
