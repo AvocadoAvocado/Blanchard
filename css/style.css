@@ -2429,7 +2429,7 @@ body {
   }
 
   .hero__title {
-    max-height: 126px;
+    max-height: 78px;
     margin-bottom: 10px;
     line-height: 97px;
   }
@@ -2494,15 +2494,15 @@ body {
   }
 
   .gallery__swiper-box {
-    min-width: 13%;
+    min-width: 22%;
   }
 
-  /* .gallery__button-next {
+  /* .gallery__button-next {ы
     justify-content: flex-end;
   } */
 
   .gallery__swiper-pagination {
-    margin: auto 9px;
+    margin: auto 16px;
   }
 
   .gallery__swiper {
@@ -2543,16 +2543,28 @@ body {
   }
 
   .accordion__name-box {
-    max-height: 408px;
+    max-height: 406px;
     margin-top: 35px;
   }
 
+  .accordion__list-name--lg {
+    padding-left: 42px;
+  }
+
+  /* .card-preview__swiper-slide {
+    max-width: 290px;
+  } */
+
   .card-preview__container-content {
-    padding: 14px 32px 46px 32px;
+    padding: 17px 32px 46px 32px;
   }
 
   .card-preview__box {
-    max-height: 387px;
+    min-height: 388px;
+  }
+
+  .card-preview__title {
+    margin-bottom: 9px;
   }
 
   .projects__title {
