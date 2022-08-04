@@ -469,6 +469,8 @@ body {
   z-index: 10;
   padding-top: 30px;
   padding-bottom: 45px;
+  padding-right: 30px;
+  padding-left: 30px;
   color: #fff;
 }
 
@@ -1823,18 +1825,7 @@ body {
   line-height: 22px;
 }
 
-@media(min-width: 353px) {
-  .gallery__swiper-box {
-    min-width: 76%;
-  }
-
-  .gallery__swiper-slide::before {
-    width: 63%;
-    height: 81%;
-  }
-}
-
-@media(min-width: 498px) {
+@media(min-width: 576px) {
   .container {
     padding-left: 50px;
     padding-right: 50px;
@@ -1844,21 +1835,6 @@ body {
     padding: 15px 50px;
   }
 
-  .hero__content {
-    padding: 50px 50px;
- }
-
-  .gallery__swiper-box {
-    min-width: 56%;
-  }
-
-  .gallery__container-bootstrap {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
-@media(min-width: 576px) {
   .gallery__container-bootstrap {
     padding-left: 12px;
     padding-right: 12px;
@@ -2655,10 +2631,6 @@ body {
   .projects__swiper-slide-image::before {
     width: 295px;
     height: 110px;
-  }
-
-  .contacts__messengers {
-    padding-left: 80px;
   }
 
   .contacts__row {
