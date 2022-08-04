@@ -2880,7 +2880,7 @@ body {
 
   .gallery__modal-wraper {
     min-height: 500px;
-    margin: auto 510px;
+    margin: auto 502px;
   }
 
   .gallery__modal-img {
@@ -2972,7 +2972,7 @@ body {
   }
 
   .header__main {
-    padding-right: 181px;
+    padding-right: 180px;
   }
 
   .header__menu {
@@ -3258,9 +3258,25 @@ body {
     width: 45px;
     height: 45px;
   }
+
+  .gallery__modal-img img {
+    min-height: 495px;
+  }
+
+  .gallery__modal-inner {
+    padding-top: 71px;
+  }
 }
 
 @media(min-width: 1920px) {
+  .hero__title {
+    max-height: 83px;
+  }
+
+  .hero__swiper {
+    height: 698px;
+  }
+
   .projects__swiper-slide img {
     max-width: 330px;
     max-height: 85px;
@@ -3269,5 +3285,35 @@ body {
   .projects__swiper-slide-image::before {
     width: 454px;
     height: 143px;
+  }
+
+  .accordion__list-name {
+    max-width: 250px;
+  }
+
+  .accordion__list-name--lg {
+    padding-left: 12px;
+  }
+
+  .projects {
+    padding-bottom: 89px;
+  }
+
+  .contacts__container--sm {
+    padding-top: 29px;
+    padding-bottom: 13px;
+  }
+
+  .contacts__location {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .form__col-container--field-btn {
+    min-width: 341px;
+  }
+
+  .map {
+    height: 708px;
   }
 }
