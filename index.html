@@ -23,24 +23,26 @@
   <div class="site-container">
     <header class="header container">
       <div class="header__main">
-        <button class="btn btn-reset burger" type="button" data-burger aria-label="Открыть меню"
-          aria-expanded="false"></button>
+        <button class="btn btn-reset burger" type="button" data-burger aria-label="Открыть меню" aria-expanded="false"
+          tabindex="0"></button>
         <a class="logo header__logo" href="#">
           <img class="logo__image" src="img/logo.svg" alt="Логотип художественной галереи">
         </a>
         <div class="header__container-search">
-          <button class="btn-reset search search--form" type="button"></button>
+          <button class="btn-reset search search--form" aria-label="Найти" type="button"></button>
           <form class="header__container-form header__container-form--invis"
             action="https://jsonplaceholder.typicode.com/posts">
-            <label class="visually-hidden" for="search">поиск</label>
-            <input class="header__search-input" type="search" id="search" name="search">
+            <label for="search">
+              <span class="visually-hidden">поиск</span>
+              <input class="header__search-input" type="search" id="search" name="search">
+            </label>
             <button class="header__search-close btn btn-reset" aria-label="Закрыть" type="button"></button>
           </form>
         </div>
       </div>
       <div class="header__menu">
         <nav class="header__menu-nav">
-          <button class="btn btn-reset header__menu-close"></button>
+          <button class="btn btn-reset header__menu-close" aria-label="Закрыть" type="button"></button>
           <ul class="list-reset header__menu-list">
             <li class="header__menu-item"><a class="header__menu-link" href="#">О&nbsp;нас</a></li>
             <li class="header__menu-item"><a class="header__menu-link" href="#">Галерея</a></li>
@@ -50,7 +52,7 @@
             <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
           </ul>
         </nav>
-        <button class="btn btn-reset header__menu-login">
+        <button class="btn btn-reset header__menu-login" type="button">
           <svg class="header__icon-login" width="9" height="9" viewBox="0 0 9 9" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -158,7 +160,7 @@
           </div>
         </div>
         <form class="header__form-search" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <button class="btn-reset search header__header-search-lg" type="button"></button>
+          <button class="btn-reset search header__header-search-lg" aria-label="Найти" type="button"></button>
           <input class="header__search-input" type="search" placeholder="Поиск по сайту">
         </form>
       </div>
@@ -485,7 +487,8 @@
                       </p>
                     </div>
 
-                    <div class="col-9 col-sm-4 col-lg-6 col-xl-9 col-xxl-4 accordion__list-name accordion__list-name--lg">
+                    <div
+                      class="col-9 col-sm-4 col-lg-6 col-xl-9 col-xxl-4 accordion__list-name accordion__list-name--lg">
                       <p class="ac-text site-descr accordion__list-artist">
                         <a class="accordion__link-artist accordion__link-artist--lg" href="#">Веккьетта</a>
                         <a class="accordion__link-artist" href="#">Андреа Верроккьо</a>
@@ -877,11 +880,11 @@
                 </div>
                 <div class="projects__swiper-slide swiper-slide">
                   <a class="projects__swiper-slide-image" href="#">
-                  <picture>
-                    <source srcset="img/partners-2-2x.png">
-                    <img class="projects__slide-image" src="img/partners-2.png" alt="слайд3">
-                  </picture>
-                </a>
+                    <picture>
+                      <source srcset="img/partners-2-2x.png">
+                      <img class="projects__slide-image" src="img/partners-2.png" alt="слайд3">
+                    </picture>
+                  </a>
                 </div>
                 <div class="projects__swiper-slide swiper-slide">
                   <a class="projects__swiper-slide-image" href="#">
@@ -961,12 +964,14 @@
 
             <form class="col-xl-7 row gx-3 gy-3 form contacts__form" action="https://jsonplaceholder.typicode.com/posts"
               method="post">
-              <div class="col-12 col-sm-6 col-lg-3 form__col-container contacts__form-field form__col-container--field-top">
+              <div
+                class="col-12 col-sm-6 col-lg-3 form__col-container contacts__form-field form__col-container--field-top">
                 <span class="form__span form__span--status-invalid">Недопустимый формат</span>
                 <label class="visually-hidden" for="name">Имя</label>
                 <input class="form__input" id="name" type="text" name="name" placeholder="Имя*" required>
               </div>
-              <div class="col-12 col-sm-6 col-lg-3 form__col-container contacts__form-field form__col-container--field-bottom">
+              <div
+                class="col-12 col-sm-6 col-lg-3 form__col-container contacts__form-field form__col-container--field-bottom">
                 <span class="form__span form__span--status-invalid">Недопустимый формат</span>
                 <label class="visually-hidden" for="tel">Телефон</label>
                 <input class="form__input" id="tel" type="tel" name="tel" placeholder="Телефон*" required>
