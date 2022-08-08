@@ -443,7 +443,7 @@ body {
 
 .hero__slide {
   width: 100%;
-  height: 355px;
+  min-height: 355px;
   background-position: center;
   object-fit: cover;
   background-size: cover;
@@ -2002,7 +2002,7 @@ body {
   }
 
   .hero__slide {
-    height: 768px;
+    min-height: 768px;
   }
 
   .hero__content {
@@ -2013,7 +2013,6 @@ body {
   }
 
   .hero__title {
-    max-height: 81px;
     font-size: 72px;
     line-height: 95px;
     text-align: left;
@@ -2408,7 +2407,6 @@ body {
   }
 
   .hero__title {
-    max-height: 78px;
     margin-bottom: 10px;
     line-height: 97px;
   }
@@ -2721,7 +2719,6 @@ body {
   }
 
   .hero__title {
-    max-height: 122px;
     margin-bottom: 59px;
   }
 
@@ -2880,7 +2877,7 @@ body {
   }
 
   .projects__swiper {
-    margin: 0 67px;
+    margin: 0 53px;
   }
 
   .projects__swiper-btn {
@@ -2967,6 +2964,7 @@ body {
 
   .header__menu-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .header__header-addon {
@@ -3041,7 +3039,7 @@ body {
     outline: none;
     color: #7943a4;
     background-color: transparent;
-    transition: background-color .5s ease-in-out;
+    /* transition: background-color .5s ease-in-out; */
   }
 
   .header__select-btn:active::before {
