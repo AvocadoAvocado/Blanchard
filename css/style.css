@@ -54,21 +54,14 @@
   --color-primary-controls-focus: #c283f3;
   --color-primary-controls-active: #7943a4;
   --color-controls-outline: #d1a9f0;
+  --color-accordion: #b7b7b7;
   --color-bg : #ececec;
   --color-border : #cacaca;
+  --color-controls-swiper: #666;
+  --color-span-text: #999;
   --color-primary-text: #fff;
   --color-primary-bg: #fff;
   --color-black: #000;
-
-
-
-
-  --color-primary-text: #fff;
-  --color-primary-text-focus: #fff;
-  --color-primary-text-active: #fff;
-  --color-link-focus: #666;
-  --color-link-active: #666;
-
 }
 
 html {
@@ -224,16 +217,20 @@ body {
   display: flex;
   align-items: flex-end;
   flex-grow: 1;
-  max-width: 100%;
+  width: 100%;
 }
 
 .header__container-form--invis {
   display: none;
 }
 
+.header__search-box {
+  width: 100%;
+  margin-right: 20px;
+}
+
 .header__search-input {
-  flex-grow: 1;
-  margin-right: 10px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid var(--color-primary-bg);
   background-color: initial;
@@ -490,6 +487,12 @@ body {
 .hero__swiper-button-prev,
 .hero__swiper-button-next {
   z-index: 100;
+}
+
+.hero__content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__content {
@@ -878,7 +881,7 @@ body {
   border-radius: 100%;
   font-size: 9px;
   color: var(--color-primary-text);
-  background-color: #666;
+  background-color: var(--color-controls-swiper);
 }
 
 .gallery__button-prev:focus::after,
@@ -1112,13 +1115,13 @@ body {
 .accordion__pic-wrapper {
   padding: 4px;
   margin-right: 25px;
-  border: 2px solid #b7b7b7;
+  border: 2px solid var(--color-accordion);
 }
 
 .accordion__pic {
   min-width: 79px;
   min-height: 118px;
-  background-color: #b7b7b7;
+  background-color: var(--color-accordion);
 }
 
 .accordion__name-box {
@@ -1195,7 +1198,7 @@ body {
   margin-bottom: 12px;
   font-size: 12px;
   line-height: 16px;
-  color: #999;
+  color: var(--color-span-text);
 }
 
 .card-artist__career {
@@ -1230,7 +1233,7 @@ body {
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 16px;
-  color: #999;
+  color: var(--color-span-text);
 }
 
 .card-preview__title {
@@ -1284,7 +1287,7 @@ body {
   width: 10px;
   height: 10px;
   margin: 0 7px;
-  background-color: #666;
+  background-color: var(--color-controls-swiper);
 }
 
 .card-preview__swiper-slide img {
@@ -1498,6 +1501,10 @@ body {
 }
 
 /* contacts */
+.contacts__container--sm {
+  display: block;
+}
+
 .contacts__caption {
   display: block;
   padding-bottom: 4px;
@@ -1846,7 +1853,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #999;
+  color: var(--color-span-text);
 }
 
 .gallery__modal-descr {
@@ -2039,11 +2046,15 @@ body {
   .hero__content {
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 605px;
+    min-height: 669px;
     padding-top: 110px;
+    padding-bottom: 115px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .hero__title {
+    margin-bottom: -10px;
     font-size: 72px;
     line-height: 95px;
     text-align: left;
@@ -2152,6 +2163,14 @@ body {
   .catalog__descr {
     display: block;
     padding-bottom: 6px;
+  }
+
+  .accordion__list-name--sm {
+    padding-left: 37px;
+  }
+
+  .accordion__list-name--sm-column {
+    padding-left: 42px;
   }
 
   .accordion__control svg {
@@ -2395,7 +2414,7 @@ body {
   }
 
   .search {
-    width: 27px;
+    width: 29px;
     height: 27px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2407,9 +2426,9 @@ body {
   }
 
   .header__container-search--position .search {
-    width: 26px;
+    width: 29px;
     height: 25px;
-    margin-right: 24px;
+    margin-right: 6px;
   }
 
   .header__search-close {
@@ -2438,8 +2457,11 @@ body {
   }
 
   .hero__title {
-    margin-bottom: 10px;
     line-height: 97px;
+  }
+
+  .about {
+    padding-top: 89px;
   }
 
   .gallery__container-column {
@@ -2749,9 +2771,9 @@ body {
     padding: 133px 0;
   }
 
-  .hero__title {
+  /* .hero__title {
     margin-bottom: 59px;
-  }
+  } */
 
   .catalog__artist {
     padding-right: 48px;
@@ -3267,12 +3289,21 @@ body {
 }
 
 @media(min-width: 1920px) {
-  .hero__title {
-    max-height: 83px;
-  }
-
   .hero__swiper {
     min-height: 698px;
+  }
+
+  .hero__content {
+    min-height: 698px;
+    padding-bottom: 122px;
+  }
+
+  .hero__title {
+    margin-bottom: -2px;
+  }
+
+  .about {
+    padding-top: 80px;
   }
 
   .projects__swiper-slide img {

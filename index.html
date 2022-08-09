@@ -32,7 +32,7 @@
           <button class="btn-reset search search--form" aria-label="Найти" type="button"></button>
           <form class="header__container-form header__container-form--invis"
             action="https://jsonplaceholder.typicode.com/posts">
-            <label for="search">
+            <label class="header__search-box" for="search">
               <span class="visually-hidden">поиск</span>
               <input class="header__search-input" type="search" id="search" name="search">
             </label>
@@ -171,11 +171,13 @@
         <div class="hero__container container">
           <div class="hero__content">
             <h1 class="visually-hidden">Blanchard-художественная галерея</h1>
-            <h2 class="site-title hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
-            <p class="col-lg-10 site-descr hero__descr">
-              Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
-              предпосылки для новых предложений.
-            </p>
+            <div class="hero__content-container">
+              <h2 class="site-title hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
+              <p class="col-lg-12 site-descr hero__descr">
+                Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что реализация намеченных плановых заданий создаёт
+                предпосылки для новых предложений.
+              </p>
+            </div>
             <button class="btn btn-reset hero__btn" type="button">Подписаться на&nbsp;рассылку</button>
           </div>
         </div>
@@ -412,7 +414,7 @@
             </div>
             <div class="gallery__modal gallery__modal--invis">
               <div class="gallery__modal-wraper">
-                <button class="btn btn-reset gallery__modal-close" type="button">
+                <button class="btn btn-reset gallery__modal-close" aria-label="Закрыть" type="button">
                   <span class="visually-hidden">Закрыть</span>
                 </button>
                 <div class="gallery__modal-img">
@@ -488,7 +490,7 @@
                     </div>
 
                     <div
-                      class="col-9 col-sm-4 col-lg-6 col-xl-9 col-xxl-4 accordion__list-name accordion__list-name--lg">
+                      class="col-9 col-sm-4 col-lg-6 col-xl-9 col-xxl-4 accordion__list-name accordion__list-name--sm accordion__list-name--lg">
                       <p class="ac-text site-descr accordion__list-artist">
                         <a class="accordion__link-artist accordion__link-artist--lg" href="#">Веккьетта</a>
                         <a class="accordion__link-artist" href="#">Андреа Верроккьо</a>
@@ -502,7 +504,7 @@
                       </p>
                     </div>
 
-                    <div class="col-8 col-sm-4 col-lg-6 col-xl-9 col-xxl-4 accordion__list-name">
+                    <div class="col-8 col-sm-4 col-lg-6 col-xl-9 col-xxl-4 accordion__list-name accordion__list-name--sm-column">
                       <p class="ac-text site-descr accordion__list-artist">
                         <a class="accordion__link-artist" href="#">Парентино, Бернардо</a>
                         <a class="accordion__link-artist accordion__link-artist--lg" href="#">Пезеллино</a>
