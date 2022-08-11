@@ -1,3 +1,9 @@
+// select
+const element = document.querySelector('select');
+const choices = new Choices(element, {
+  searchEnabled: false
+});
+
 // swiper
 const slider = document.querySelector('.swiper-container');
 

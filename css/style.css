@@ -920,7 +920,7 @@ body {
   position: relative;
 }
 
-.row__pagination {
+.gallery__row-pagination {
   justify-content: center;
 }
 
@@ -1206,8 +1206,8 @@ body {
   line-height: 32px;
 }
 
-/* events */
-.events__title {
+/* card-preview */
+.card-preview__title {
   margin-bottom: 12px;
 }
 
@@ -1620,26 +1620,26 @@ body {
   display: none;
 }
 
-.messengers__text {
+.contacts__text {
   margin-bottom: 8px;
   font-size: 18px;
   line-height: 32px;
 }
 
-.messengers__list {
+.contacts__list {
   display: flex;
   flex-direction: row;
 }
 
-.messengers__item {
+.contacts__item {
   padding-right: 21px;
 }
 
-.messengers__item:last-child {
+.contacts__item:last-child {
   padding-right: 0;
 }
 
-.messengers__link {
+.contacts__link {
   display: inline-block;
   width: 49px;
   height: 49px;
@@ -1648,18 +1648,18 @@ body {
   background-repeat: no-repeat;
 }
 
-.messengers__link:focus {
+.contacts__link:focus {
   outline: none;
   opacity: .3;
 }
 
-.messengers__link:hover {
+.contacts__link:hover {
   cursor: pointer;
   opacity: .3;
   transition: opacity .3s ease-in-out;
 }
 
-.messengers__link:active {
+.contacts__link:active {
   cursor: pointer;
   outline: 1px solid var(--color-primary-controls);
   outline-offset: -1px;
@@ -1668,11 +1668,11 @@ body {
   transition: outline .3s ease-in-out;
 }
 
-.messengers__link--whatsapp {
+.contacts__link--whatsapp {
   background-image: url("../img/Whatsapp-Icon.svg");
 }
 
-.messengers__link--telegram {
+.contacts__link--telegram {
   background-image: url("../img/Telegram-icon.svg");
 }
 
@@ -1889,7 +1889,7 @@ body {
     margin-bottom: 28px;
   }
 
-  .gallery-pagination__container {
+  .gallery__pagination-container {
     padding-right: 0;
     padding-left: 0;
   }
@@ -1899,7 +1899,7 @@ body {
     flex-grow: 0;
   }
 
-  .row__pagination {
+  .gallery__row-pagination {
     justify-content: flex-start;
   }
 
@@ -2344,7 +2344,7 @@ body {
     margin-top: 13px;
   }
 
-  .messengers__text {
+  .contacts__text {
     font-weight: 600;
     font-size: 24px;
   }
@@ -2654,7 +2654,7 @@ body {
     height: 100%;
   }
 
-  .messengers__text {
+  .contacts__text {
     margin-bottom: 5px;
   }
 }
@@ -3262,7 +3262,7 @@ body {
     min-height: 310px;
   }
 
-  .gallery-pagination__container {
+  .gallery__pagination-container {
     margin-left: 9px;
   }
 

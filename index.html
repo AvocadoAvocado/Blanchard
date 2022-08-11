@@ -183,13 +183,13 @@
         </div>
         <div class="swiper hero__swiper">
           <div class="swiper-wrapper hero__swiper-wrapper">
-            <div class="swiper-slide hero__swiper-slide" style="background-image:url('../img/bg-hero-slider-1lg.jpg')">
+            <div class="swiper-slide hero__swiper-slide" style="background-image:url('./img/bg-hero-slider-1lg.jpg')">
             </div>
 
-            <div class="swiper-slide hero__swiper-slide" style="background-image:url('../img/bg-hero-slider-2lg.jpg')">
+            <div class="swiper-slide hero__swiper-slide" style="background-image:url('./img/bg-hero-slider-2lg.jpg')">
             </div>
 
-            <div class="swiper-slide hero__swiper-slide" style="background-image:url('../img/bg-hero-slider-3lg.jpg')">
+            <div class="swiper-slide hero__swiper-slide" style="background-image:url('./img/bg-hero-slider-3lg.jpg')">
             </div>
           </div>
         </div>
@@ -202,6 +202,7 @@
           <div class="swiper-button-next hero__swiper-btn hero__swiper-button-next"></div>
         </div>
       </section>
+
       <section class="about container-wrapper">
         <div class="container about__container">
           <div class="row">
@@ -245,13 +246,6 @@
                         <option value="picture">Рисунок</option>
                         <option value="sculpture">Скульптура</option>
                       </select>
-                      <script>
-                        const element = document.querySelector('select');
-                        const choices = new Choices(element, {
-                          searchEnabled: false
-                        });
-
-                      </script>
                     </div>
 
                     <div class="form__filter-gallery">
@@ -402,8 +396,8 @@
                 </div>
               </div>
 
-              <div class="gallery-pagination__container">
-                <div class="row__pagination">
+              <div class="gallery__pagination-container">
+                <div class="gallery__row-pagination">
                   <div class="col-12 col-xs-6 col-sm-2 col-lg-1 gallery__swiper-box">
                     <div class="gallery__swiper-btn gallery__button-prev swiper-button-prev"></div>
                     <div class="swiper-pagination gallery__swiper-pagination"></div>
@@ -685,9 +679,9 @@
         </div>
       </section>
 
-      <section class="events">
-        <div class="container events__container">
-          <h3 class="site-title site-caption events__title">
+      <section class="card-preview">
+        <div class="container card-preview__container">
+          <h3 class="site-title site-caption card-preview__title">
             События
           </h3>
 
@@ -867,8 +861,6 @@
             Партнёры проектов:
           </h5>
 
-
-
           <div class="projects__swiper-content">
             <div class="projects__swiper swiper mySwiper">
               <div class="projects__swiper-wrapper swiper-wrapper">
@@ -987,22 +979,23 @@
             </form>
 
             <div class="col-xl-3 contacts__messengers">
-              <p class="site-descr messengers__text">
+              <p class="site-descr contacts__text">
                 Связаться в&nbsp;один клик
               </p>
-              <ul class="list-reset messengers__list">
-                <li class="messengers__item">
-                  <a class="messengers__link messengers__link--whatsapp" href="#">
+              <ul class="list-reset contacts__list">
+                <li class="contacts__item">
+                  <a class="contacts__link contacts__link--whatsapp" href="#">
                   </a>
                 </li>
-                <li class="messengers__item">
-                  <a class="messengers__link messengers__link--telegram" href="#"></a>
+                <li class="contacts__item">
+                  <a class="contacts__link contacts__link--telegram" href="#"></a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
+
       <section class="geolocation">
         <div class="container-map">
           <div class="map" id="map">
