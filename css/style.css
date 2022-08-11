@@ -2161,13 +2161,13 @@ body {
     padding-bottom: 6px;
   }
 
-  /* .accordion__list-name--sm {
+  .accordion__list-name--sm {
     padding-left: 37px;
-  } */
+  }
 
-  /* .accordion__list-name--sm-column {
+  .accordion__list-name--sm-column {
     padding-left: 42px;
-  } */
+  }
 
   .accordion__control svg {
     width: 50px;
@@ -2307,6 +2307,11 @@ body {
 
   .contacts__address {
     margin-bottom: 10px;
+  }
+
+  .contacts__link {
+    width: 38px;
+    height: 38px;
   }
 
   .contacts__caption {
@@ -2569,9 +2574,9 @@ body {
     margin-top: 35px;
   }
 
-  /* .accordion__list-name--lg {
-    padding-left: 42px;
-  } */
+  .accordion__list-name--sm-column {
+    padding-left: 0;
+  }
 
   .card-preview__container-content {
     padding: 17px 32px 46px 32px;
@@ -3344,5 +3349,11 @@ body {
 
   .gallery__modal-wraper {
     margin: auto 502px;
+  }
+
+  .gallery__container-bg svg {
+    position: absolute;
+    left: 38%;
+    top: 33%;
   }
 }
