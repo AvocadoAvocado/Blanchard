@@ -1237,10 +1237,10 @@ body {
 }
 
 .card-preview__title {
-  margin-bottom: 4px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
 }
 
 .card-preview__descr {
@@ -1581,10 +1581,6 @@ body {
 
 .contacts {
   margin-bottom: 20px;
-}
-
-.contacts__container--sm {
-  display: none;
 }
 
 .contacts__btn {
@@ -2165,13 +2161,13 @@ body {
     padding-bottom: 6px;
   }
 
-  .accordion__list-name--sm {
+  /* .accordion__list-name--sm {
     padding-left: 37px;
-  }
+  } */
 
-  .accordion__list-name--sm-column {
+  /* .accordion__list-name--sm-column {
     padding-left: 42px;
-  }
+  } */
 
   .accordion__control svg {
     width: 50px;
@@ -2573,9 +2569,9 @@ body {
     margin-top: 35px;
   }
 
-  .accordion__list-name--lg {
+  /* .accordion__list-name--lg {
     padding-left: 42px;
-  }
+  } */
 
   .card-preview__container-content {
     padding: 17px 32px 46px 32px;

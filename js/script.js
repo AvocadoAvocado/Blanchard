@@ -31,7 +31,7 @@ let swiper = new Swiper('.gallery__swiper', {
       spaceBetween: 30
     },
   }
-})
+});
 
 let mySwiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
@@ -78,7 +78,7 @@ let mySlider = new Swiper('.card-preview__swiper', {
       spaceBetween: 39
     },
   }
-})
+});
 
 var buttonSwiper = new Swiper(".projects__swiper", {
   slidesPerView: 1,
@@ -132,7 +132,7 @@ selectButtons.forEach(function (btn) {
         const list = btn.nextElementSibling;
         list.classList.toggle('visible-block');
     });
-})
+});
 
 // accordion
 new Accordion('.accordion-list', {
@@ -147,7 +147,7 @@ function init() {
   var myMap = new ymaps.Map("map", {
 
     center: [55.76033441718593, 37.61357447360226],
-    zoom: 14,
+    zoom: 13,
     controls: []
   });
 
@@ -155,7 +155,7 @@ function init() {
     iconLayout: 'default#image',
     iconImageHref: 'img/location.svg',
     iconImageSize: [20, 20],
-    iconImageOffset: [-3, -42]
+    iconImageOffset: [-10, -12]
   });
 
   myMap.geoObjects.add(myPlacemark);
@@ -173,7 +173,7 @@ let buttonSearchClose = document.querySelector('.header__search-close')
 buttonSearch.addEventListener('click', ()=> {
   wrapperSearch.classList.add('header__container-search--position');
   formSearch.classList.remove('header__container-form--invis');
-})
+});
 
 buttonSearchClose.addEventListener('click', function (){
   wrapperSearch.classList.remove('header__container-search--position');
@@ -191,7 +191,7 @@ btnLoupe.forEach(function (btn) {
     event.preventDefault();
     galleryModal.classList.remove('gallery__modal--invis');
   })
-})
+});
 
 buttonModalClose.addEventListener('click', function (){
   galleryModal.classList.add('gallery__modal--invis');
