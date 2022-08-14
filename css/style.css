@@ -414,6 +414,10 @@ body {
   fill: var(--color-primary-bg);
 }
 
+.header__menu-login, .header__menu-login svg path {
+  transition: all .3s ease-in-out;
+}
+
 .header__menu-login:focus {
   outline: none;
   border-color: var(--color-primary-controls-active);
@@ -2079,7 +2083,7 @@ body {
     justify-content: center;
   }
 
-  /* .gallery */
+  /* gallery */
   .gallery {
     padding-bottom: 61px;
     background-image: url("../img/bg-gallery-sm.jpg");
@@ -2771,10 +2775,6 @@ body {
     min-height: 708px;
     padding: 133px 0;
   }
-
-  /* .hero__title {
-    margin-bottom: 59px;
-  } */
 
   .catalog__artist {
     padding-right: 48px;
