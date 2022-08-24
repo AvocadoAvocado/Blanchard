@@ -2592,7 +2592,7 @@ body {
   }
 
   .card-preview__box {
-    min-height: 388px;
+    min-height: 385px;
   }
 
   .card-preview__title {
@@ -2633,16 +2633,28 @@ body {
     height: 128px;
   }
 
-  .contacts__form-field {
-    min-width: 289px;
-  }
-
   .form__col-container--field-btn {
     min-width: 344px;
   }
 
   .form__input {
-    max-width: 95%;
+    max-width: 100%;
+  }
+
+  .contacts__form {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: space-between;
+  }
+
+  .contacts__form-box {
+    flex-grow: 1;
+    margin-bottom: 0;
+    padding-right: 15px;
+  }
+
+  .contacts__form-field {
+    padding-bottom: 0;
   }
 
   .form__container-position {
@@ -2668,8 +2680,16 @@ body {
     height: 100%;
   }
 
+  .contacts__address {
+    margin-bottom: 29px;
+  }
+
   .contacts__text {
     margin-bottom: 5px;
+  }
+
+  .contacts__container--sm {
+    padding-bottom: 42px;
   }
 }
 
@@ -3326,6 +3346,14 @@ body {
 
   .form__col-container--field-btn {
     min-width: 341px;
+  }
+
+  .contacts__row {
+    display: flex;
+  }
+
+  .contacts__form {
+    margin-bottom: 0;
   }
 
   .map {
