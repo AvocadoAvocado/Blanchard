@@ -2805,10 +2805,6 @@ body {
     padding: 133px 0;
   }
 
-  .catalog__artist {
-    padding-right: 48px;
-  }
-
   .catalog__item {
     padding: 31px 0;
   }
@@ -3304,7 +3300,7 @@ body {
   }
 
   .hero__content {
-    min-height: 698px;
+    min-height: 701px;
     padding-bottom: 122px;
   }
 
@@ -3312,12 +3308,58 @@ body {
     margin-bottom: -2px;
   }
 
+  .hero__descr {
+    max-width: 556px;
+  }
+
   .about {
     padding-top: 80px;
   }
 
+  .about__descr {
+    max-width: 1050px;
+  }
+
+  .gallery {
+    padding-bottom: 75px;
+  }
+
+  .gallery__container-form {
+    margin-right: 43px;
+  }
+
+  .gallery__swiper {
+    margin-top: 27px;
+    max-width: 1157px;
+  }
+
+  .gallery__swiper-box {
+    min-width: 13%;
+  }
+
+  .gallery__swiper-pagination {
+    margin: auto 16px;
+  }
+
+  .catalog__descr {
+    max-width: 1106px;
+    margin-bottom: 39px;
+  }
+
+  .catalog__artist {
+    margin-right: 51px;
+  }
+
+  .accordion__name-box {
+    justify-content: flex-start;
+  }
+
+  .accordion__list-name:not(:last-child) {
+    margin-right: 60px;
+  }
+
   .projects__swiper-slide img {
-    max-width: 330px;
+    max-width: 249px;
     max-height: 85px;
   }
 
@@ -3331,21 +3373,43 @@ body {
   }
 
   .projects {
-    padding-bottom: 89px;
+    padding-bottom: 74px;
+  }
+
+  .projects__title-partners {
+    margin-bottom: 17px;
+  }
+
+  .projects__swiper {
+    margin: 0 69px;
+    height: 160px;
+  }
+
+  .projects__desct {
+    max-width: 1066px;
   }
 
   .contacts__container--sm {
-    padding-top: 29px;
-    padding-bottom: 13px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+
+  .contacts__caption {
+    padding-bottom: 2px;
   }
 
   .contacts__location {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 36px;
+  }
+
+  .contacts__address {
+    margin-bottom: 0;
+    padding-right: 51px;
   }
 
   .form__col-container--field-btn {
-    min-width: 341px;
+    min-width: 328px;
   }
 
   .contacts__row {
@@ -3354,10 +3418,11 @@ body {
 
   .contacts__form {
     margin-bottom: 0;
+    padding-right: 50px;
   }
 
   .map {
-    height: 708px;
+    height: 700px;
   }
 
   .gallery__modal-wraper {
