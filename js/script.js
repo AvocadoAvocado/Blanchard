@@ -130,13 +130,20 @@ menuClose.addEventListener('click', function (){
 
 // select-list
 const selectButtons = document.querySelectorAll('.header__select-btn');
+const listItems = document.querySelectorAll('.header__select-list');
 selectButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
         btn.classList.toggle('header__select-btn-toggle');
 
         const list = btn.nextElementSibling;
         list.classList.toggle('visible-block');
-    });
+
+        listItems.forEach(function(item) {
+          if (item != list) {
+            item.classList.remove('visible-block');
+          }
+        });
+      });
 });
 
 // accordion
@@ -144,7 +151,8 @@ new Accordion('.accordion-list', {
   elementClass: 'accordion',
   triggerClass: 'accordion__control',
   panelClass: 'accordion__content',
-  activeClass: 'accordion--active'
+  activeClass: 'accordion--active',
+  openOnInit: [0],
 });
 
 // map

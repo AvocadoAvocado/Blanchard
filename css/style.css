@@ -993,6 +993,7 @@ body {
 
 .accordion--active .accordion__content {
   visibility: visible;
+  border-bottom: 1px solid var(--color-bg);
 }
 
 .accordion__control {
@@ -1000,6 +1001,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
+  height: 113px;
 }
 
 .accordion__control:focus {
@@ -1045,7 +1047,8 @@ body {
   border-color: var(--color-primary-controls);
 }
 
-.catalog__item:hover .accordion__heading button {
+.catalog__item:hover .accordion__heading button,
+.accordion--active .accordion__heading button {
   color: var(--color-primary-controls);
 }
 
@@ -1086,7 +1089,8 @@ body {
   fill: var(--color-controls-outline);
 }
 
-.catalog__item:hover svg circle {
+.catalog__item:hover svg circle,
+.accordion--active svg circle {
   fill: var(--color-controls-outline);
 }
 
@@ -1133,7 +1137,7 @@ body {
 .accordion__name-box {
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid var(--color-primary-controls);
+  /* border-top: 1px solid var(--color-primary-controls); */
 }
 
 .accordion__name-box:focus {
@@ -1148,7 +1152,7 @@ body {
 
 .accordion__link-artist {
   position: relative;
-  display: block;
+  margin-right: 62px;
 }
 
 .accordion__link-artist::before {
@@ -1165,6 +1169,17 @@ body {
 
 .accordion__link-artist:focus {
   outline: none;
+}
+
+.accordion__link-artist:focus::after,
+.accordion__link-artist--active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
   background-color: var(--color-primary-controls);
 }
 
@@ -2199,8 +2214,22 @@ body {
     align-items: center;
   }
 
+  .catalog__item:last-child .accordion__heading {
+    border-color: var(--color-bg);
+  }
+
+  .catalog__item:hover .accordion__heading,
+  .accordion--active .accordion__heading {
+    border-color: var(--color-primary-controls);
+  }
+
   .accordion__heading {
     font-size: 24px;
+    border-top: 1px solid var(--color-bg);
+    border-bottom: 1px solid transparent;
+  }
+
+  .accordion__span {
     line-height: 32px;
   }
 
@@ -2502,6 +2531,12 @@ body {
   .accordion__list-artist {
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-height: 100%;
   }
 
   .accordion__pic-wrapper {
@@ -2579,8 +2614,9 @@ body {
   }
 
   .accordion__name-box {
-    max-height: 406px;
-    margin-top: 35px;
+    max-height: 315px;
+    margin-top: 0;
+    margin-bottom: 25px;
   }
 
   .accordion__list-name--sm-column {
@@ -2806,7 +2842,9 @@ body {
   }
 
   .catalog__item {
-    padding: 31px 0;
+    padding: 0;
+    margin: 0;
+    border: none;
   }
 
   .catalog {
@@ -3148,6 +3186,7 @@ body {
 
   .header__select-link {
     position: relative;
+    display: block;
     width: 218px;
     height: 40px;
     padding: 11px 14px;
@@ -3347,7 +3386,7 @@ body {
   }
 
   .catalog__artist {
-    margin-right: 51px;
+    margin-right: 48px;
   }
 
   .accordion__name-box {
@@ -3366,10 +3405,6 @@ body {
   .projects__swiper-slide-image::before {
     width: 454px;
     height: 143px;
-  }
-
-  .accordion__list-name {
-    max-width: 250px;
   }
 
   .projects {
